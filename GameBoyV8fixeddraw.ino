@@ -46,11 +46,10 @@ File currentScriptFile;
 const int SDA_PIN = 4;
 const int SCL_PIN = 3;
 
-float ROTATION_THRESHOLD = 5.0;  // Customizable threshold for C++ event firing
 const float TEMP_OFFSET = -24.0;
 unsigned long mpuTimer = 0;  // Timer variable for MPU update rate (10ms is good)
 MPU6050 mpu(Wire);
-float lastAngleX = 0.0;
+bool mpuAvailable = false;  // <-- new flag
 // --------------------------------------
 
 SPIClass spiSD(HSPI);
@@ -92,64 +91,38 @@ void stopLuaScript() {
   Serial.println("Lua stopped and memory reset!");
 }
 
-// --- NEW MPU6050 FUNCTIONS (C++) ---
+void showMpuData() {
+  Serial.print(F("TEMPERATURE: "));
+  Serial.println(mpu.getTemp());
+  Serial.print(F("ACCELERO  X: "));
+  Serial.print(mpu.getAccX());
+  Serial.print("\tY: ");
+  Serial.print(mpu.getAccY());
+  Serial.print("\tZ: ");
+  Serial.println(mpu.getAccZ());
 
-// Function to read MPU data, check threshold, and fire a Lua event
-// Function to read MPU data, check threshold, and fire a Lua event
-void readMPUData() {
-  // Only update MPU data every 10ms (matching the library's recommended rate)
-  if ((millis() - mpuTimer) > 10) {
-    mpu.update();
-    mpuTimer = millis();
-  }
+  Serial.print(F("GYRO      X: "));
+  Serial.print(mpu.getGyroX());
+  Serial.print("\tY: ");
+  Serial.print(mpu.getGyroY());
+  Serial.print("\tZ: ");
+  Serial.println(mpu.getGyroZ());
 
-  // We get the angles directly from the library's internal state
-  float currentRollAngle = mpu.getAngleX();
-  float currentPitchAngle = mpu.getAngleY();
-  float currentYawAngle = mpu.getAngleZ();
+  Serial.print(F("ACC ANGLE X: "));
+  Serial.print(mpu.getAccAngleX());
+  Serial.print("\tY: ");
+  Serial.println(mpu.getAccAngleY());
 
-  // MPU6050_light does not directly expose acceleration/temp via .getEvent()
-  // without modification, so we'll read them directly from the member variables.
-  // The library stores temperature in a public variable, but often needs re-reading.
-
-  // To ensure fresh temperature and raw data, let's assume the library's update() populates
-  // the following public members (check library source if still weird).
-  // The simplest way to get raw data is often to grab the most recent values:
-  float ax = mpu.getAccX();
-  float ay = mpu.getAccY();
-  float az = mpu.getAccZ();
-  float tempC = mpu.getTemp();  // MPU6050_light has getTemp()
-
-  // Check for rotation change (event firing logic)
-  // We use the Roll angle for the event threshold, as before
-  if (runningLua == true && abs(currentRollAngle - lastAngleX) >= ROTATION_THRESHOLD) {
-    Serial.println("MPU Roll change detected. Firing 'onRotation' Lua event...");
-
-    // Prepare event data as a Lua table string
-    String eventData = "{";
-    eventData += "roll=" + String(currentRollAngle, 2) + ",";
-    eventData += "pitch=" + String(currentPitchAngle, 2) + ",";
-    eventData += "yaw=" + String(currentYawAngle, 2) + ",";  // Yaw added
-    eventData += "last_roll=" + String(lastAngleX, 2) + ",";
-    eventData += "temp=" + String(tempC + TEMP_OFFSET, 1) + ",";
-    eventData += "ax=" + String(ax, 2) + ",";
-    eventData += "ay=" + String(ay, 2) + ",";
-    eventData += "az=" + String(az, 2);
-    eventData += "}";
-
-    // Fire event into Lua (calls global function 'onRotation(eventData)')
-    String luaCall = "if onRotation then onRotation(" + eventData + ") end";
-    lua.Lua_dostring(&luaCall);
-
-    lastAngleX = currentRollAngle;  // Update baseline only after firing the event
-  } else if (runningLua == false) {
-    // Only update baseline slowly when menu is active to avoid spurious triggers
-    lastAngleX = currentRollAngle;
-  }
+  Serial.print(F("ANGLE     X: "));
+  Serial.print(mpu.getAngleX());
+  Serial.print("\tY: ");
+  Serial.print(mpu.getAngleY());
+  Serial.print("\tZ: ");
+  Serial.println(mpu.getAngleZ());
+  Serial.println(F("=====================================================\n"));
 }
 
-// --- END MPU6050 FUNCTIONS (C++) ---
-
+// --- NEW MPU6050 FUNCTIONS (C++) ---
 void drawBmpTransparent(const char* filename, int16_t x, int16_t y, float scale, uint16_t transparentColor = 0x0000) {
 
   if ((x >= tft.width()) || (y >= tft.height())) return;
@@ -305,6 +278,66 @@ uint32_t read32(fs::File& f) {
 }
 
 
+int lua_getMPUData(lua_State* L) {
+  lua_newtable(L);  // Create a new table on Lua stack
+
+  // Temperature
+  lua_pushstring(L, "temp");
+  lua_pushnumber(L, mpu.getTemp());
+  lua_settable(L, -3);
+
+  // Accelerometer
+  lua_pushstring(L, "accX");
+  lua_pushnumber(L, mpu.getAccX());
+  lua_settable(L, -3);
+
+  lua_pushstring(L, "accY");
+  lua_pushnumber(L, mpu.getAccY());
+  lua_settable(L, -3);
+
+  lua_pushstring(L, "accZ");
+  lua_pushnumber(L, mpu.getAccZ());
+  lua_settable(L, -3);
+
+  // Gyroscope
+  lua_pushstring(L, "gyroX");
+  lua_pushnumber(L, mpu.getGyroX());
+  lua_settable(L, -3);
+
+  lua_pushstring(L, "gyroY");
+  lua_pushnumber(L, mpu.getGyroY());
+  lua_settable(L, -3);
+
+  lua_pushstring(L, "gyroZ");
+  lua_pushnumber(L, mpu.getGyroZ());
+  lua_settable(L, -3);
+
+  // Accelerometer angles
+  lua_pushstring(L, "accAngleX");
+  lua_pushnumber(L, mpu.getAccAngleX());
+  lua_settable(L, -3);
+
+  lua_pushstring(L, "accAngleY");
+  lua_pushnumber(L, mpu.getAccAngleY());
+  lua_settable(L, -3);
+
+  // Gyro angles
+  lua_pushstring(L, "angleX");
+  lua_pushnumber(L, mpu.getAngleX());
+  lua_settable(L, -3);
+
+  lua_pushstring(L, "angleY");
+  lua_pushnumber(L, mpu.getAngleY());
+  lua_settable(L, -3);
+
+  lua_pushstring(L, "angleZ");
+  lua_pushnumber(L, mpu.getAngleZ());
+  lua_settable(L, -3);
+
+  return 1;  // Return 1 table to Lua
+}
+
+
 
 // ==== Helper Functions to expose to Lua ====
 int lua_drawPixel(lua_State* L) {
@@ -419,72 +452,6 @@ int lua_StopLua(lua_State* L) {
   return 0;
 }
 
-// === NEW LUA EXPOSED FUNCTION 1: Get IMU Data (FIXED for MPU6050_light) ===
-int lua_getIMUData(lua_State* L) {
-  // 1. Ensure data is updated (call mpu.update() before reading)
-  // This is crucial if Lua calls this function faster than 10ms
-  mpu.update();
-
-  // 2. Read the stable angles and raw data
-  float rollAngle = mpu.getAngleX();
-  float pitchAngle = mpu.getAngleY();
-  float yawAngle = mpu.getAngleZ();
-
-  float ax = mpu.getAccX();
-  float ay = mpu.getAccY();
-  float az = mpu.getAccZ();
-  float tempC = mpu.getTemp();
-
-  float correctedTemp = tempC + TEMP_OFFSET;
-
-  // 3. Return data as a Lua table
-  lua_newtable(L);
-
-  // --- ANGLE DATA ---
-  lua_pushstring(L, "roll");
-  lua_pushnumber(L, rollAngle);
-  lua_settable(L, -3);
-
-  lua_pushstring(L, "pitch");
-  lua_pushnumber(L, pitchAngle);
-  lua_settable(L, -3);
-
-  lua_pushstring(L, "yaw");
-  lua_pushnumber(L, yawAngle);
-  lua_settable(L, -3);
-
-  // --- ACCELERATION DATA (Scaled values from the library) ---
-  lua_pushstring(L, "ax");
-  lua_pushnumber(L, ax);
-  lua_settable(L, -3);
-
-  lua_pushstring(L, "ay");
-  lua_pushnumber(L, ay);
-  lua_settable(L, -3);
-
-  lua_pushstring(L, "az");
-  lua_pushnumber(L, az);
-  lua_settable(L, -3);
-
-  // --- TEMPERATURE DATA ---
-  lua_pushstring(L, "temp");
-  lua_pushnumber(L, correctedTemp);
-  lua_settable(L, -3);
-
-  return 1;  // Return the new table
-}
-
-// === NEW LUA EXPOSED FUNCTION 2: Set Rotation Threshold ===
-int lua_setRotationThreshold(lua_State* L) {
-  float newThreshold = luaL_checknumber(L, 1);
-  if (newThreshold >= 0) {
-    ROTATION_THRESHOLD = newThreshold;
-    Serial.printf("MPU Rotation Threshold set to: %.2f\n", ROTATION_THRESHOLD);
-  }
-  return 0;
-}
-
-
 // === Register all functions ===
 void registerCustomLuaFunctions() {
   lua.Lua_register("drawPixel", lua_drawPixel);
@@ -497,9 +464,7 @@ void registerCustomLuaFunctions() {
   lua.Lua_register("readGPIO", lua_readGPIO);
   lua.Lua_register("showText", lua_showText);
   lua.Lua_register("stopLua", lua_StopLua);
-  // NEW MPU functions
-  lua.Lua_register("getIMUData", lua_getIMUData);
-  lua.Lua_register("setRotationThreshold", lua_setRotationThreshold);
+  lua.Lua_register("getMPUData", lua_getMPUData);
 }
 
 
@@ -763,7 +728,7 @@ void drawMainScreen() {
 
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   tft.init();
   tft.setRotation(1);  // optional, adjust for your screen orientation
@@ -771,10 +736,10 @@ void setup() {
   tft.fillScreen(TFT_BLACK);
 
   spiSD.begin(SD_SCLK, SD_MISO, SD_MOSI, SD_CS);  // SCK, MISO, MOSI, CS
-  if (!SD.begin(SD_CS, spiSD,4000000)) {
+  if (!SD.begin(SD_CS, spiSD, 4000000)) {
     Serial.println("Card Mount Failed");
     tft.print("Card Mount Failed");
-    while (1) yield(); // Stay here twiddling thumbs waiting
+    while (1) yield();  // Stay here twiddling thumbs waiting
   }
 
   Serial.println("SD mounted.");
@@ -799,23 +764,22 @@ void setup() {
 
   // --- NEW: MPU6050 Setup ---
   Serial.println("Starting MPU6050 setup...");
-  // Initialize I2C communication on GPIO 4 (SDA) and GPIO 3 (SCL)
   Wire.begin(SDA_PIN, SCL_PIN);
 
   byte status = mpu.begin();
   Serial.print(F("MPU6050 status: "));
   Serial.println(status);
-  if (status != 0) {
-    Serial.println("Failed to find MPU6050 chip. Check wiring!");
-    // We continue, but MPU data will be garbage or 0
-  } else {
+
+  // Many MPU6050_light versions return 0 on success. treat 0 as success, non-zero as failure.
+  if (status == 0) {
+    mpuAvailable = true;  // mark available
     Serial.println(F("Calculating offsets, do not move MPU6050"));
     delay(1000);
-    mpu.calcOffsets();  // gyro and accelero
-    Serial.println("MPU Ready! Offsets Calculated.");
-    // Get initial reading for stability and setting the baseline for detection
-    mpu.update();
-    lastAngleX = mpu.getAngleX();
+    mpu.calcOffsets(true, true);  // gyro and accelero
+    Serial.println("Done!\n");
+  } else {
+    mpuAvailable = false;
+    Serial.println("Failed to find MPU6050 chip. Check wiring!");
   }
   // ---------------------------
 
@@ -824,11 +788,13 @@ void setup() {
 
 void loop() {
   // Always run MPU check and event firing frequently.
-  readMPUData();
-  // A small delay prevents the loop from consuming 100% CPU time,
-  // which helps stability, but keep it low for responsive gameplay.
-  delay(10);
+  mpu.update();
 
+
+  if (millis() - mpuTimer > 1000) {  // print data every second
+    showMpuData();
+    mpuTimer = millis();
+  }
   // While running Lua, we skip the menu logic
   if (runningLua) {
     return;
