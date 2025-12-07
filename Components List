@@ -1,0 +1,19 @@
+-----------------Compoments------------------------
+1. ESP32 TYPE-C USB CH340C/CP2102 WiFi+Bluetooth Ultra-Low Power Dual Core ESP32-DevKitC-32/ESP-WROOM-32 (https://www.aliexpress.com/item/1005007569108276.html?spm=a2g0o.order_list.order_list_main.25.4f6c1802MLulQG)
+2. MH_SD Card Module
+2.1. 1Pcs Micro SD Card Mini TF Card Reader Module SPI Interfaces With Level Converter Chip 3.3V For Arduino DIY KIT (https://www.aliexpress.com/item/1005009254250259.html?spm=a2g0o.order_list.order_list_main.50.23431802Tq3yyX)
+3. 2.0 inch TFT Display Drive IC ST7789V 240RGBx320 Dot-Matrix SPI Interface Full Color LCD Display Module (https://www.aliexpress.com/item/1005006589727895.html?spm=a2g0o.order_list.order_list_main.20.4f6c1802MLulQG)
+4. 1A Type-c 18650 TP4056 Lithium Battery Charger Module Charging Board With Protection Dual Functions Li-ion (https://www.aliexpress.com/item/1005006043031985.html?spm=a2g0o.order_list.order_list_main.100.23431802QBEGXK)
+5. MPU6050 sensor
+6. 8 Tactical buttons
+7. 3.8v li-ion battery (From old samsung phone)
+8. Sd card
+
+----------------Future comp--------------------------
+1. 3.3v regulator
+2. Power switch
+3. Esp32 with exteranl antena
+4. Amplifier
+5. Speaker
+6. Aux output
+5. Usb & step up to 5volts for charging phone
