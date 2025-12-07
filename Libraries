@@ -1,0 +1,6 @@
+-----------------Libraries Used-----------------------
+1. TFT_eSPI
+2. Arduino-Lua
+3. SD
+4. MPU6050_light
+5. ESP32-A2DP
