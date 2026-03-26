@@ -13,4 +13,4 @@ The main goal is to create a stable and functional handheld console.
 
 - Games — lots of them, with the ability to easily add more  
 - Utilities such as measurement tools and possibly an angle checker  
-- Music playback through built-in speakers or Bluetooth headphones  
+- Music playback through built-in speakers or Bluetooth/Wired headphones  
