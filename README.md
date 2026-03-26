@@ -1,14 +1,16 @@
 # esp32-console
 
-Using an esp32 as the main brain of the console lot of capabilities are unlocked.
-The main goal is to have a stable, functional handheld console.
+Using an ESP32 as the main brain of the console unlocks many capabilities.  
+The main goal is to create a stable and functional handheld console.
 
-The plan is simple:
--Design it on a breadboard
--Do all the fixing and coding on this breadboard
--Move to making the case and soldering everything
+## Plan
 
-What I want it to feature:
--Games like lots of them with the ability to easily add more
--Utillities such as measurement, angle checker(maybe) etc
--Music playing either by either built in speakers or to bluetooth headphones
+- Design it on a breadboard  
+- Do all the fixing and coding on the breadboard  
+- Move to making the case and soldering everything  
+
+## Features
+
+- Games — lots of them, with the ability to easily add more  
+- Utilities such as measurement tools and possibly an angle checker  
+- Music playback through built-in speakers or Bluetooth headphones  
