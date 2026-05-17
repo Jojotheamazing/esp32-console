@@ -1,5 +1,7 @@
 # esp32-console
 
+Big note: this repo is kinda old but will update with the code and libraries and everything once i find some time. Thanks
+
 Using an ESP32 as the main brain of the console unlocks many capabilities.  
 The main goal is to create a stable and functional handheld console.
 
