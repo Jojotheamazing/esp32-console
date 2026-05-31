@@ -6,8 +6,8 @@
 
 ## 📖 Description
 
-Using an ESP32 as the main brain of the console unlocks many capabilities.  
-The main goal is to create a stable and functional handheld console.
+Using an ESP32 s3 as the main brain of the console unlocks many capabilities.  
+The main goal is to create a stable and functional handheld console with mostly cheap components so anyone can replicate it.
 
 ---
 
