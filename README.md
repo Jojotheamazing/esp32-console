@@ -13,14 +13,15 @@ The main goal is to create a stable and functional handheld console with mostly 
 
 # ✨ Features
 
-## 🔵 Bluetooth
+## 🔵 Bluetooth **[ADDED]** turned off
 - Scan for devices  
 - Connect to device  
-- Play audio from device  
+- Play audio from device
+  EXCEPT:
 - Play audio to device  
 - Maybe connect external controller  
 
-## 📶 WiFi (maybe)
+## 📶 WiFi (maybe) **[ADDED]** EXCEPT SKETCH
 - Create WiFi network  
 - Connect to pc/phone  
 - Manage sd card(configure files)  
