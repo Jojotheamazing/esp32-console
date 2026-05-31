@@ -28,7 +28,7 @@ The main goal is to create a stable and functional handheld console with mostly 
 - Upload sketch(maybe)  
 
 ## 📳 Haptics
-- 2 Vibration motors with dynamic setup  
+- 2 Vibration motors one in each side with dynamic setup  
 
 ## 🔊 Audio
 - 2 Speakers for left/right  
@@ -53,7 +53,7 @@ The main goal is to create a stable and functional handheld console with mostly 
 
 # ⚠️ Issues currently facing
 
-- Esp32 classic lacks ram for both Bluetooth and lua. Planning on changing to esp32 s3 however s3 doesn’t support Bluetooth classic therefore no Bluetooth source/sink ability (possible solution: double chip esp32 s3 for heavy working esp32 classic for Bluetooth)
+- Esp32 classic lacks ram for both Bluetooth and lua. Planning on changing to esp32 s3 however s3 doesn’t support Bluetooth classic therefore no Bluetooth source/sink ability (possible solution: double chip esp32 s3 for heavy work and esp32 classic for Bluetooth)
 
 - Pam amplifier no good will switch to max (excuse me I don’t remember the exact components)
 
@@ -67,4 +67,5 @@ The main goal is to create a stable and functional handheld console with mostly 
 - Design it on a breadboard  
 - Do all the fixing and coding on the breadboard  
 - Move to making the case and soldering everything
+- Might make a pcb if it gets too big but i have no idea how so need to learn first
   
