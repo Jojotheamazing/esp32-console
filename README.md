@@ -2,6 +2,10 @@
 
 > Big note: this repo is kinda old when it comes to code and wiring but will update with the code and libraries and everything once i find some time. Thanks
 
+# 🛠️ Under construction
+
+Project is journalled daily in forge🔥⚒️: https://forge.hackclub.com/projects/425
+
 ---
 
 ## 📖 Description
