@@ -11,21 +11,14 @@ Project is journalled daily in forge🔥⚒️: https://forge.hackclub.com/proje
 ## 📖 Description
 
 Using an ESP32 s3 as the main brain of the console unlocks many capabilities.  
-The main goal is to create a stable and functional handheld console with mostly cheap components so anyone can replicate it.
+The main goal is to create a stable and functional handheld console with mostly cheap components so anyone can replicate it and is fun to use.
+
 
 ---
 
 # ✨ Features
 
-## 🔵 Bluetooth **[ADDED]** turned off
-- Scan for devices  
-- Connect to device  
-- Play audio from device
-  EXCEPT:
-- Play audio to device  
-- Maybe connect external controller  
-
-## 📶 WiFi (maybe) **[ADDED]** EXCEPT SKETCH
+## 📶 WiFi **[ADDED]** EXCEPT SKETCH
 - Create WiFi network  
 - Connect to pc/phone  
 - Manage sd card(configure files)  
@@ -39,7 +32,7 @@ The main goal is to create a stable and functional handheld console with mostly 
 - 2 Speakers for left/right  
 - Music loaded from sd  
 - Features stated in Bluetooth(bt sink/source)  
-- Mic for recording or audio interactive games  
+- Mic for recording or audio interactive games (optional) 
 
 ## 🎮 Control
 - Four buttons each side  
@@ -56,21 +49,10 @@ The main goal is to create a stable and functional handheld console with mostly 
 
 ---
 
-# ⚠️ Issues currently facing
+# ⚠️ IMPORTANT NOTES
+- In my version i use a tft display with a ili9341 display driver (40 Mhz) I however recommend using a newer ST7789 which supports up to 80 Mhz firmware is designed for the ili9341 but can provide set up help for the newer.
+- This project isn't perfect and can have some issues on fast graphics. Optimazed lua and NES games can run well with plenty fps.
+- The audio is stereo which means both speakers output the same audio.
 
-- Esp32 classic lacks ram for both Bluetooth and lua. Planning on changing to esp32 s3 however s3 doesn’t support Bluetooth classic therefore no Bluetooth source/sink ability (possible solution: double chip esp32 s3 for heavy work and esp32 classic for Bluetooth)
-
-- Pam amplifier no good will switch to max (excuse me I don’t remember the exact components)
-
-- Lua wrapper library lacking features  
-  **[FIXED]** changed library to lua 5.1 for esp32
-
----
-
-# 🛠️ Plan
-
-- Design it on a breadboard  
-- Do all the fixing and coding on the breadboard  
-- Move to making the case and soldering everything
-- Might make a pcb if it gets too big but i have no idea how so need to learn first
+# 🛠️ INSTRUCTIONS
   
