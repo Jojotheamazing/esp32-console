@@ -18,43 +18,129 @@ The main goal is to create a stable and functional handheld console with mostly 
 
 # ✨ Features
 
-## 📶 WiFi **[ADDED]** EXCEPT SKETCH
-- Create WiFi network  
-- Connect to pc/phone  
-- Manage sd card(configure files)  
-- Upload music/ organise music  
-- Upload sketch(maybe)  
-
 ## 📳 Haptics
 - 2 Vibration motors one in each side with dynamic setup  
 
 ## 🔊 Audio
-- 2 Speakers for left/right  
+- 2 Speakers for left/right (non stereo sound)
 - Music loaded from sd  
-- Features stated in Bluetooth(bt sink/source)  
-- Mic for recording or audio interactive games (optional) 
 
 ## 🎮 Control
 - Four buttons each side  
 - 2 buttons select/start  
-- Smd button for volume control/mute  
+- Tripod button for volume control
+- Top button for each each side
 - Mpu6050 for more interactive games  
-- Maybe top button each side  
-- On/off switch  
-- Possible feature stated in bluetooth(external controller)  
+- On/off switch 
 
 ## ⚡ General
 - Type C charging and can act as a power bank  
-- LED purple lights  
+
+---
+
+---
+
+# ✨ Features
+
+## 📶 WiFi
+- Manage sd card(configure files)  
+
+## 👾 Games
+- Supports custom made lua games (with custom api)
+- Supports NES emulation
+
+## 🎵 Mucic
+- Can play music saved on the SD (on the built in speakers)
+
+## 🖥️ PC (with python on the server side)
+- Connect with laptop/pc and screen mirror the pc's screen to the console (i know kinda useless but i liked)
+- Controled screen mirror similiar as above but with control (such as joystick as mouse) could potentially play pc games on the console
+
+## 🎮 Gamepad/ Steering mode
+- Can act as wirelles controller (connects with windows and android only)
+- Or as a steering wheel (Uses the imu sensor to track rotation and joystick for acceleration/braking)
 
 ---
 
 # ⚠️ IMPORTANT NOTES
-- In my version i use a tft display with a ili9341 display driver (40 Mhz) I however recommend using a newer ST7789 which supports up to 80 Mhz firmware is designed for the ili9341 but can provide set up help for the newer.
+- In my version i use a tft display with a ili9341 display driver (40 Mhz) I however recommend using a newer ST7789 which supports up to 80 Mhz, firmware is designed for the ili9341 but can provide setup help for the newer.
 - This project isn't perfect and can have some issues on fast graphics. Optimazed lua and NES games can run well with plenty fps.
 - The audio is stereo which means both speakers output the same audio.
-
+- This project requires a lot of soldering and patience wouldn't recommend for beginners
 # 🛠️ INSTRUCTIONS
+The wire lenghts might not apply to reality please check by roughly laying it from point a to b.
+
+First step: perfboard cutting
+Tools: I recomend a cutting razor for the cutting or diagnal cutiing pliers, for the holes you need a 2mm drill bit and a dremel/ drill
+
+You are going to need to cut 5 perfboard pieces in these dimensions
+<img width="3508" height="2480" alt="Part 1 Drawing 1 (1)" src="https://github.com/user-attachments/assets/342a46b5-e794-453f-97f4-50943dcb663e" />
+
+As you can see we need 2 side boards these should strictly be 12x12 pins, the main board doesnt have any strict pin number just make sure you can fit all the components on it (lay them on it before cutting it),
+then the hardest to get right is the esp32-s3 mount board this needs just a row of pins but its hard to line the usb ports correctly and lastly the top button board this should be 3 pins wide.
+
+There are many methods to cut them if you are struggling you can search a tutorial online.
+
+After cutting your perfboard to the specified dimension and drilling the mounting holes its time to prepare each one of them.
+
+We will start with the smaller square perfboards those are the side boards where the buttons will be on. So for this step we need 8x Tactile Push Buttons and thin wire (recommend 30awg) and soldering equipment
+These buttons:
+<img width="480" height="640" alt="image0 (9)" src="https://github.com/user-attachments/assets/2109e837-b930-483b-8917-4ca00afb7434" />
+
+
+Firstly set the board falt on the table and put the buttons in this pattern
+<img width="588" height="550" alt="image" src="https://github.com/user-attachments/assets/47ab0237-228d-40a3-9b5d-9a22adff8014" />
+
+Securely solder them on the board you can either solder 2 diagnol pins or all 4 of them after that flip the board over here is where you need the wire you now need to connect all the ground pads together 
+Like that:
+<img width="480" height="640" alt="IMG_7884" src="https://github.com/user-attachments/assets/147abe67-274e-422f-827f-8fa6681f0f1c" />
+
+Now you need to cut long pieces of wires: 5x 140mm and 5x 55mm
+The shorter pieces are for the left side you should connect 1 piece to each button and leave the other end unconnected and the fifth cable should connect to the common ground
+The longer pieces are for the right side same as above.
+
+Now we will connect the top buttons: take 2 limit switches
+on the one connect the ground pin to the left common ground on the button board (1cm wire) and the other pin to a 55mm wire and leave the other end disconnected
+on the other same for ground but the other cable should be 140mm long
+
+Nice you have now finished the side button boards!
+Lets move to the Top button board this is really simple you need 3 tactile buttons of this kind 
+<img width="480" height="640" alt="image3" src="https://github.com/user-attachments/assets/0fe83089-103f-44b8-93f4-5b06eee87e53" />
+
+lay the buttons like that
+<img width="1148" height="201" alt="image" src="https://github.com/user-attachments/assets/b2316f1e-0f99-4ccb-adbe-aaa1de1ee56a" />
+secure both ends with solder then connect one pad of each button to the other.
+Then cut 3 long 30 awg cable 2x140mm and 1x150mm
+The longest cable should be soldered to the center button and the other 2 wires to the 2 remaining buttons.
+
+YAY done with the top button board as well (for now :D)!!
+Next step the main board this should be a bit demanding the placement of each compent can be changed but make sure you calculate the wire lenght correctly and they wont intersect with an other stuff (especially the sd card slot of the tft screen)
+Firstly lay all the compnets the board like that (The mpu6050 and the max9857A shouldnt have header pins) 
+<img width="834" height="724" alt="image" src="https://github.com/user-attachments/assets/6fe91240-c20a-4d10-9163-b8b7858dd66b" />
+(Also add the diode somewhere on the board and the 2 resitors 4.7kohm for the mcp23170)
+secure everything on the board with solder.
+Now flip the board and connect the 3v3 output from the regulator to both the mpu6050 and the mcp230170.
+Connect all the ground pads together.
+Now you need to make sure not to mess this up as it can damage the components
+connect the regulator voltage input (we will connect the 5volts on it later) to the drv8833 input, the amplifier's input and to the the diode.
+For the power cables i recomend a bit thicker cable such as 24-26 awg.
+
+Now connect with 30 awg cable the scl and sda pins of the mcp to the mpu6050 (since they share the same bus)
+with long pieces of 30awg cable extend the pre existing cables of the vibrating motors and then connect those to the drv8833 out1/out2 and out3/out4.
+Take the 2 resitors (4.7k ohms) and connect one end to 3v3 and the other scl/sda
+
+Lets now move to the esp32 take the cut perfboard and solder the first and last pin of the esp32 to it (at least 2 pins soldered)
+and set it aside the main board (on the drv8833 side and usb ports showing the mpu6050)
+Wont get in-depth here but connect the pins of the main board to the esp32 based on the schematic use 30awg for all the signal cables and 24-26 awg for power cables. 
+
+Lets now move to the joysticks what i recommend is to connect the switch pins of the joysticks to the mcp23170 before screwing the main board in the shell, the rest can be connected any time to the corresponding esp32 gpio and gnd /3v3 (Make 100% sure you take power from a 3v3 source and not a 5volt on since this will burn the esp32)
+
+Lets now set up the switch take the 3d printed holder and place it through ( also make sure the lever lenght is around 2mm) after that procceed to connect it as the schematik shows with 24 awg i also reccomend using some heatshrinks.
+
+This should be the hardest part but take the side button boards lay them in the correct side and connect all the disconnected cables (except the gnd) to the corresponding pin of the mcp23170 and take the gnd cables and connect them with and gnd connection you find.
+
+This is now the part which needs the most attention soldering the wires on the li ion cell for this i highly recommend finding a tutorial on youtube and follow it through. I have to note here that soldering directly on li ion cells can be dangerous be exctremly careful or buy lion cells with pre connected tabs/ cables.
+
   
 # Bill of Materials (BOM)
 
