@@ -131,7 +131,8 @@ Take the 2 resitors (4.7k ohms) and connect one end to 3v3 and the other scl/sda
 
 Lets now move to the esp32 take the cut perfboard and solder the first and last pin of the esp32 to it (at least 2 pins soldered)
 and set it aside the main board (on the drv8833 side and usb ports showing the mpu6050)
-Wont get in-depth here but connect the pins of the main board to the esp32 based on the schematic use 30awg for all the signal cables and 24-26 awg for power cables. 
+Wont get in-depth here but connect the components of the main board to the esp32 based on the schematic use 30awg for all the signal cables
+and 24-26 awg for power cables going from 5v to VIN (double check the gpio pin says VIN/5v and not 3v3 impotant for not frying the chip). 
 
 Lets now move to the joysticks what i recommend is to connect the switch pins of the joysticks to the mcp23170 before screwing the main board in the shell, the rest can be connected any time to the corresponding esp32 gpio and gnd /3v3 (Make 100% sure you take power from a 3v3 source and not a 5volt on since this will burn the esp32)
 
@@ -139,9 +140,48 @@ Lets now set up the switch take the 3d printed holder and place it through ( als
 
 This should be the hardest part but take the side button boards lay them in the correct side and connect all the disconnected cables (except the gnd) to the corresponding pin of the mcp23170 and take the gnd cables and connect them with and gnd connection you find.
 
-This is now the part which needs the most attention soldering the wires on the li ion cell for this i highly recommend finding a tutorial on youtube and follow it through. I have to note here that soldering directly on li ion cells can be dangerous be exctremly careful or buy lion cells with pre connected tabs/ cables.
+This is now the part which needs the most attention soldering the wires on the li ion cell for this i highly recommend finding a tutorial on youtube and follow it through. I have to note here that soldering directly on li ion cells can be dangerous be exctremly careful or buy lion cells with pre connected tabs/ cables. After connecting the wires secure both ends with electrical tape.
 
-  
+Now take both speakers and connect each tab to the other corresponding one (basically connect them in parralel) take the right speaker (them facing down) and connect 2 24awg cables at least 75mm long in the pads 
+like that 
+<img width="474" height="419" alt="image" src="https://github.com/user-attachments/assets/87309cd6-6dcd-4ef4-96ea-a6aa874c0a08" />
+
+before assemling you need to also add 2 long 30awg wires (at least 170mm) to 2 free mcp pins (this will later connect to the volume control button) and one more on the ground.
+
+now lets start the assembly make sure all the main board connections (with it self) are done and all the side buttons cables are connected same with joysticks, switch, and top buttons (not the middle one)
+Firstly screw the main board and the side button boards and the esp32 in those spots 
+<img width="1311" height="570" alt="image" src="https://github.com/user-attachments/assets/ced9dec4-bdef-47ea-bb1c-2c2ed7ce4453" />
+The main board requires at maximum 5mm screw lenght (you can use only 2 if you want)
+
+now peel the adhesive on the vibrating motors and slide them in these postiitons 
+<img width="1054" height="419" alt="image" src="https://github.com/user-attachments/assets/a03477c7-4126-4353-856b-2f057c1517ea" />
+
+Now for the rear buttons you will need 2 long screws 12mm recomended.
+Firstly put the one spring end in the slot of the button (for both sides) and place them in the shell. Now put the limit switch and srew it in place with the other end of the spring should look like that
+<img width="537" height="296" alt="image" src="https://github.com/user-attachments/assets/a3d2e84b-2fef-489e-a841-90bee10f0007" />
+
+Take the powerbank module and screw it here
+<img width="876" height="649" alt="image" src="https://github.com/user-attachments/assets/0c67ddab-f1f7-4e83-8eca-2f0d3dc29182" />
+
+put the battery on the slot and get the cables through (make sure they dont come in contact)
+Now take 26 awg cable and connect the 5v pin to the vin of the regulator and ground to any main board ground.
+<img width="1000" height="2357" alt="image" src="https://github.com/user-attachments/assets/c90b036b-3da7-4a80-bd35-5ab5f5ce9a9e" />
+
+Lets now move to the top shell set it flat above the bottom shell like that 
+<img width="984" height="648" alt="image" src="https://github.com/user-attachments/assets/65fcd16d-8e93-42bd-bd46-9969fe617a6f" />
+
+take the switch "Assembly" and screw it in place (make sure you add the switch cover, look at red arrow)
+<img width="799" height="471" alt="image" src="https://github.com/user-attachments/assets/9ed4b0ba-0b85-43dd-aa20-91c75a6d83fa" />
+
+I now recommend connecting the speakers to the amplifier and screwing them in the top shell using max 2.5mm scews.
+Now add the tft screen and connect the signal cables as shown in the schematic with 30 awg and the power cables with at least 26awg.
+Add the volume button in here (you might need to cut the holder a bit)
+<img width="664" height="729" alt="image" src="https://github.com/user-attachments/assets/ef1f0270-d752-4e67-a810-d649266efc95" />
+
+
+
+
+
 # Bill of Materials (BOM)
 
 | Item | Usage | Quantity | Price (when bought) | Supplier/Link | Description/Notes |
