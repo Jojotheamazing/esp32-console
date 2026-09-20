@@ -68,7 +68,7 @@ The main goal is to create a stable and functional handheld console with mostly 
 - The audio is stereo which means both speakers output the same audio.
 - This project requires a lot of soldering and patience wouldn't recommend for beginners
 # 🛠️ INSTRUCTIONS
-The wire lenghts might not apply to reality please check by roughly laying it from point a to b.
+The wire lenghts might not apply to reality please check by roughly laying it from point a to b before cutting.
 
 First step: perfboard cutting
 Tools: I recomend a cutting razor for the cutting or diagnal cutiing pliers, for the holes you need a 2mm drill bit and a dremel/ drill
@@ -132,13 +132,13 @@ Take the 2 resitors (4.7k ohms) and connect one end to 3v3 and the other scl/sda
 Lets now move to the esp32 take the cut perfboard and solder the first and last pin of the esp32 to it (at least 2 pins soldered)
 and set it aside the main board (on the drv8833 side and usb ports showing the mpu6050)
 Wont get in-depth here but connect the components of the main board to the esp32 based on the schematic use 30awg for all the signal cables
-and 24-26 awg for power cables going from 5v to VIN (double check the gpio pin says VIN/5v and not 3v3 impotant for not frying the chip). 
+and 24-26 awg for power cables going from the diode to the esp32 VIN (double check the gpio pin says VIN/5v and not 3v3, impotant for not frying the chip). 
 
 Lets now move to the joysticks what i recommend is to connect the switch pins of the joysticks to the mcp23170 before screwing the main board in the shell, the rest can be connected any time to the corresponding esp32 gpio and gnd /3v3 (Make 100% sure you take power from a 3v3 source and not a 5volt on since this will burn the esp32)
 
 Lets now set up the switch take the 3d printed holder and place it through ( also make sure the lever lenght is around 2mm) after that procceed to connect it as the schematik shows with 24 awg i also reccomend using some heatshrinks.
 
-This should be the hardest part but take the side button boards lay them in the correct side and connect all the disconnected cables (except the gnd) to the corresponding pin of the mcp23170 and take the gnd cables and connect them with and gnd connection you find.
+This should be the hardest part but take the side button boards lay them in the correct side and connect all the disconnected cables (except the gnd) to the corresponding pin of the mcp23170 and take the gnd cables and connect them with any gnd connection you find. 
 
 This is now the part which needs the most attention soldering the wires on the li ion cell for this i highly recommend finding a tutorial on youtube and follow it through. I have to note here that soldering directly on li ion cells can be dangerous be exctremly careful or buy lion cells with pre connected tabs/ cables. After connecting the wires secure both ends with electrical tape.
 
@@ -165,7 +165,7 @@ Take the powerbank module and screw it here
 
 put the battery on the slot and get the cables through (make sure they dont come in contact)
 Now take 26 awg cable and connect the 5v pin to the vin of the regulator and ground to any main board ground.
-<img width="1000" height="2357" alt="image" src="https://github.com/user-attachments/assets/c90b036b-3da7-4a80-bd35-5ab5f5ce9a9e" />
+<img width="864" height="553" alt="image" src="https://github.com/user-attachments/assets/8dae76a5-899f-4a70-9bcb-c7a5aac8bbdf" />
 
 Lets now move to the top shell set it flat above the bottom shell like that 
 <img width="984" height="648" alt="image" src="https://github.com/user-attachments/assets/65fcd16d-8e93-42bd-bd46-9969fe617a6f" />
@@ -174,9 +174,14 @@ take the switch "Assembly" and screw it in place (make sure you add the switch c
 <img width="799" height="471" alt="image" src="https://github.com/user-attachments/assets/9ed4b0ba-0b85-43dd-aa20-91c75a6d83fa" />
 
 I now recommend connecting the speakers to the amplifier and screwing them in the top shell using max 2.5mm scews.
-Now add the tft screen and connect the signal cables as shown in the schematic with 30 awg and the power cables with at least 26awg.
+Now add the tft screen and connect the signal cables (for sd car and tft) as shown in the schematic with 30 awg and the power cables with at least 26awg.
 Add the volume button in here (you might need to cut the holder a bit)
 <img width="664" height="729" alt="image" src="https://github.com/user-attachments/assets/ef1f0270-d752-4e67-a810-d649266efc95" />
+
+And connect the remaining cables from before (the mcp23017 and the ground)  to these spots (red=mcp cable and black=ground)
+<img width="722" height="602" alt="image" src="https://github.com/user-attachments/assets/7843de0a-eec0-455e-bb47-7fe96a0da2a8" />
+
+
 
 
 
