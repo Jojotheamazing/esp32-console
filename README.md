@@ -1,6 +1,6 @@
 # 🎮 esp32-console
 
-#🔥⚒️
+# 🔥⚒️
 Before starting i want to thank Forge which helped me actually finishing this project and not throwing to my drafts!
 Fully journaled project:  https://forge.hackclub.com/projects/425
 
@@ -66,6 +66,8 @@ Using an ESP32 S3 as the main brain of the console unlocks many possibilities th
 - This project isn't perfect and can have some issues on fast graphics. Optimazed lua and NES games can run well with plenty fps.
 - The audio is stereo which means both speakers output the same audio.
 - This project requires a lot of soldering and patience wouldn't recommend for beginners
+-The System expects specific SD structure please follow it or the console wont function properly.
+
 # 🛠️ INSTRUCTIONS
 The wire lenghts might not apply to reality please check by roughly laying it from point a to b before cutting.
 
@@ -220,6 +222,22 @@ Final look:
 <img width="640" height="480" alt="IMG_8322" src="https://github.com/user-attachments/assets/b8259e9a-9a71-433f-89a0-7cfe3e85d5fd" />
 
 Thats it for any questions feel free to contact me i am more than willing to answer!!
+
+# FIRMWARE SETUP
+
+-To set up the sd card first FORMAT it (ALL FILES WILL BE DELETED) and then download and transfer the whole "SD CARD" folder in the repo
+If for any reason you need to change any images/icons they need to be name exactly the same and the resolutuion should be the same.
+-Configure your home wifi's ssid and password in settings.json
+-Configure the board set board settings in "Tools" tab in arduino to this before uploading the code
+
+<img width="651" height="1051" alt="image" src="https://github.com/user-attachments/assets/fc4dd8d0-5f6a-4042-8bc6-7a8647ddf9fe" />
+
+now upload the code this should take several minutes
+
+-Button mapping wrong ?? Connect you pc to the COM port of the esp32 open serial monitor in arduino IDE after each button press a number shows match this with the configuration in "ButtonManager.h"
+<img width="677" height="811" alt="image" src="https://github.com/user-attachments/assets/79cad017-c079-42be-b7be-6d95b5d6e860" />
+
+For further questions please contact me!
 
 # Bill of Materials (BOM)
 
