@@ -1,18 +1,17 @@
 # 🎮 esp32-console
 
-> Big note: this repo is kinda old when it comes to code and wiring but will update with the code and libraries and everything once i find some time. Thanks
-
-# 🛠️ Under construction
-
-Project is journalled daily in forge🔥⚒️: https://forge.hackclub.com/projects/425
+#🔥⚒️
+Before starting i want to thank Forge which helped me actually finishing this project and not throwing to my drafts!
+Fully journaled project:  https://forge.hackclub.com/projects/425
 
 ---
 
 ## 📖 Description
 
-Using an ESP32 s3 as the main brain of the console unlocks many capabilities.  
-The main goal is to create a stable and functional handheld console with mostly cheap components so anyone can replicate it and is fun to use.
-
+This is an ESP32 S3 handheld console with many features and a sick look.
+The most awsome part? You can build your own game with its simple lua API the capabilities are endless!!
+Too bored to make your own game? Good news this console can also emulate NES games :D
+Using an ESP32 S3 as the main brain of the console unlocks many possibilities the fast proccesing power will deliver enought performance for any (optimazed) lua game.
 
 ---
 
@@ -74,6 +73,7 @@ First step: perfboard cutting
 Tools: I recomend a cutting razor for the cutting or diagnal cutiing pliers, for the holes you need a 2mm drill bit and a dremel/ drill
 
 You are going to need to cut 5 perfboard pieces in these dimensions
+
 <img width="3508" height="2480" alt="Part 1 Drawing 1 (1)" src="https://github.com/user-attachments/assets/342a46b5-e794-453f-97f4-50943dcb663e" />
 
 As you can see we need 2 side boards these should strictly be 12x12 pins, the main board doesnt have any strict pin number just make sure you can fit all the components on it (lay them on it before cutting it),
@@ -85,14 +85,17 @@ After cutting your perfboard to the specified dimension and drilling the mountin
 
 We will start with the smaller square perfboards those are the side boards where the buttons will be on. So for this step we need 8x Tactile Push Buttons and thin wire (recommend 30awg) and soldering equipment
 These buttons:
+
 <img width="480" height="640" alt="image0 (9)" src="https://github.com/user-attachments/assets/2109e837-b930-483b-8917-4ca00afb7434" />
 
 
 Firstly set the board falt on the table and put the buttons in this pattern
+
 <img width="588" height="550" alt="image" src="https://github.com/user-attachments/assets/47ab0237-228d-40a3-9b5d-9a22adff8014" />
 
 Securely solder them on the board you can either solder 2 diagnol pins or all 4 of them after that flip the board over here is where you need the wire you now need to connect all the ground pads together 
 Like that:
+
 <img width="480" height="640" alt="IMG_7884" src="https://github.com/user-attachments/assets/147abe67-274e-422f-827f-8fa6681f0f1c" />
 
 Now you need to cut long pieces of wires: 5x 140mm and 5x 55mm
@@ -105,10 +108,13 @@ on the other same for ground but the other cable should be 140mm long
 
 Nice you have now finished the side button boards!
 Lets move to the Top button board this is really simple you need 3 tactile buttons of this kind 
+
 <img width="480" height="640" alt="image3" src="https://github.com/user-attachments/assets/0fe83089-103f-44b8-93f4-5b06eee87e53" />
 
 lay the buttons like that
+
 <img width="1148" height="201" alt="image" src="https://github.com/user-attachments/assets/b2316f1e-0f99-4ccb-adbe-aaa1de1ee56a" />
+
 secure both ends with solder then connect one pad of each button to the other.
 Then cut 3 long 30 awg cable 2x140mm and 1x150mm
 The longest cable should be soldered to the center button and the other 2 wires to the 2 remaining buttons.
@@ -116,7 +122,9 @@ The longest cable should be soldered to the center button and the other 2 wires 
 YAY done with the top button board as well (for now :D)!!
 Next step the main board this should be a bit demanding the placement of each compent can be changed but make sure you calculate the wire lenght correctly and they wont intersect with an other stuff (especially the sd card slot of the tft screen)
 Firstly lay all the compnets the board like that (The mpu6050 and the max9857A shouldnt have header pins) 
+
 <img width="834" height="724" alt="image" src="https://github.com/user-attachments/assets/6fe91240-c20a-4d10-9163-b8b7858dd66b" />
+
 (Also add the diode somewhere on the board and the 2 resitors 4.7kohm for the mcp23170)
 secure everything on the board with solder.
 Now flip the board and connect the 3v3 output from the regulator to both the mpu6050 and the mcp230170.
@@ -146,6 +154,7 @@ Note: If you use 2 different cells check with a multimeter that the voltages are
 
 Now take both speakers and connect each tab to the other corresponding one (basically connect them in parralel) take the right speaker (them facing down) and connect 2 24awg cables at least 75mm long in the pads 
 like that 
+
 <img width="474" height="419" alt="image" src="https://github.com/user-attachments/assets/87309cd6-6dcd-4ef4-96ea-a6aa874c0a08" />
 
 before assemling you need to also add 2 long 30awg wires (at least 170mm) to 2 free mcp pins (this will later connect to the volume control button) and one more on the ground.
@@ -156,13 +165,16 @@ Firstly screw the main board and the side button boards and the esp32 in those s
 The main board requires at maximum 5mm screw lenght (you can use only 2 if you want)
 
 now peel the adhesive on the vibrating motors and slide them in these postiitons 
+
 <img width="1054" height="419" alt="image" src="https://github.com/user-attachments/assets/a03477c7-4126-4353-856b-2f057c1517ea" />
 
 Now for the rear buttons you will need 2 long screws 12mm recomended.
 Firstly put the one spring end in the slot of the button (for both sides) and place them in the shell. Now put the limit switch and srew it in place with the other end of the spring should look like that
+
 <img width="537" height="296" alt="image" src="https://github.com/user-attachments/assets/a3d2e84b-2fef-489e-a841-90bee10f0007" />
 
 Take the powerbank module and screw it here
+
 <img width="876" height="649" alt="image" src="https://github.com/user-attachments/assets/0c67ddab-f1f7-4e83-8eca-2f0d3dc29182" />
 
 put the battery on the slot and get the cables through (make sure they dont come in contact)
@@ -191,7 +203,9 @@ Lets now move on puting the whole thing together
 But firstly double check that every connection is made and you should be able to fully turn it on before closing it.
 
 This step is optional take 4x M2 heat insterts and place them using your soldering iron in these spots (red arrows):
+
 <img width="1319" height="557" alt="image" src="https://github.com/user-attachments/assets/89eadf54-7fe5-4e55-9c44-47c1ce7d3810" />
+
 And screw the tft display with M3 Screws (Purple arrows) (if your screws are longer there is a little ring in the 3d files)
 
 Put a litle standof bellow the console and put the buttons in the correct slots (check the rotation) and then screw the top buttons board.
@@ -199,6 +213,11 @@ now carefully close the console byt taking the bottom part and putting it over t
 Screw it with long screws 17mm minimum (if you didnt use heat inserts use longer screws 20mm minimum 23mm max)
 
 Add all the additional designs and glue them with plastic glue (NOT FOR THE JOYSTICKS).
+
+Final look:
+
+<img width="640" height="480" alt="IMG_8321" src="https://github.com/user-attachments/assets/44a6afdf-188b-4aaa-b1e8-e3bcbce32ba5" />
+<img width="640" height="480" alt="IMG_8322" src="https://github.com/user-attachments/assets/b8259e9a-9a71-433f-89a0-7cfe3e85d5fd" />
 
 Thats it for any questions feel free to contact me i am more than willing to answer!!
 
@@ -224,3 +243,16 @@ Thats it for any questions feel free to contact me i am more than willing to ans
 | Perfboard double sided | Board for buttons and the main board for mpu mcp motor driver max amplifier | - | 4.28€ (20pcs) | [AliExpress](https://a.aliexpress.com/_EIBvdBU) | I used pre cut prototype circuit boards but maybe a big piece would be better since I had to cut those either way |
 | MPU6050 sensor | For interactive games and many cool features | 1 | 2.84€ | [AliExpress](https://www.aliexpress.com/item/1005008714169630.html) | I bought this on a sensor pack so the linked product isn't tested |
 | Hall Effect Electromagnetic Joystick K-SILVER JH16 | Used for making the console gamepad "ready" and also for game/ui controlling | 2 | 12.15€ (2pcs) | [AliExpress](https://www.aliexpress.com/item/1005009646184648.html) | Those are some joysticks that are thinner than the normal 2$ modules which still offer the button click. |
+|Powerbank module| Charges the li-ion battery and charges other devices| 1 | 1.11€ | [AliExpress](https://www.aliexpress.com/item/1005007300134658.html) | Basically its used as the li ion charger but it also offers 5volt output and you can charge other devices from the console |
+|PETG-CF filament Elegoo black| The main body filament|~ 100gr |15.78€ (0.5kg) | [Skroutz](https://www.skroutz.gr/s/66648050/elegoo-petg-cf-3d-printer-filament-1-75mm-mayro-0-5kg-50-203-0647.html?product_id=300656250&sponsored=featured_similar) | This is for refrence only its the filament i used to make my version any filament type and color will work|
+|PETG Purple Creality| The secondary color filament|~20gr|  8.00 € (1kg) | [Skroutz](https://www.skroutz.gr/s/61674982/creality3d-3d-printer-filament-1-75mm-mov-1kg-3301030045.html)| This is for refrence only its the filament i used to make my version any filament type and color will work|
+|FEP Copper Wire 30AWG| Signal wires| ~4m | 1.5 (10m)| [AliExpress](https://www.aliexpress.com/item/1005008851767447.html)| Just for refrence any wire 28-32 AWG will work|
+| 24AWG 8cm Fly Jumper Wire Tin Conductor Wires| Power higher current cable |~14 pcs| 1.73 (120pcs) | [AliExpress](https://www.aliexpress.com/item/1005008194967488.html)| Just for refrence any wire 22-24 AWG will work|
+
+# "Credits"
+Thanks to flaticon and their amazing artists who share their creations free of charge.
+
+<a href="https://www.flaticon.com/free-icons/alien" title="alien icons">Alien icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/next-song" title="next song icons">Next song icons created by bsd - Flaticon</a>
+<div> Icons made by <a href="https://www.flaticon.com/authors/bsd" title="bsd"> bsd </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+<a href="https://www.flaticon.com/free-icons/playback" title="playback icons">Playback icons created by bsd - Flaticon</a>
