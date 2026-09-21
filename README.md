@@ -141,6 +141,8 @@ Lets now set up the switch take the 3d printed holder and place it through ( als
 This should be the hardest part but take the side button boards lay them in the correct side and connect all the disconnected cables (except the gnd) to the corresponding pin of the mcp23170 and take the gnd cables and connect them with any gnd connection you find. 
 
 This is now the part which needs the most attention soldering the wires on the li ion cell for this i highly recommend finding a tutorial on youtube and follow it through. I have to note here that soldering directly on li ion cells can be dangerous be exctremly careful or buy lion cells with pre connected tabs/ cables. After connecting the wires secure both ends with electrical tape.
+!Do not connect the battery/batteries to the powerbank module yet.!
+Note: If you use 2 different cells check with a multimeter that the voltages are the same for both batteries before connecting or huge current will pass through and damage sometihng. From my own testing with one battery it has plenty play time. Make abssolutly sure that you connect them in parallel or you could burn everything. For the 2 battery version the only difference in the 3d model is the left battery cover. 
 
 Now take both speakers and connect each tab to the other corresponding one (basically connect them in parralel) take the right speaker (them facing down) and connect 2 24awg cables at least 75mm long in the pads 
 like that 
@@ -180,12 +182,25 @@ Add the volume button in here (you might need to cut the holder a bit)
 
 And connect the remaining cables from before (the mcp23017 and the ground)  to these spots (red=mcp cable and black=ground)
 <img width="722" height="602" alt="image" src="https://github.com/user-attachments/assets/7843de0a-eec0-455e-bb47-7fe96a0da2a8" />
+I reccomend using a bit of super glue to better hold it in place but be careful not to block the rotating mechanism.
 
+Now before connecting the battery check with a multimeter there is no continuity in the circuit between ground and V+.
+If everything looks good proceed to connect the battery to the powerbank module (with the switch closed) !IN CORRECT POLARITY!
 
+Lets now move on puting the whole thing together 
+But firstly double check that every connection is made and you should be able to fully turn it on before closing it.
 
+This step is optional take 4x M2 heat insterts and place them using your soldering iron in these spots (red arrows):
+<img width="1319" height="557" alt="image" src="https://github.com/user-attachments/assets/89eadf54-7fe5-4e55-9c44-47c1ce7d3810" />
+And screw the tft display with M3 Screws (Purple arrows) (if your screws are longer there is a little ring in the 3d files)
 
+Put a litle standof bellow the console and put the buttons in the correct slots (check the rotation) and then screw the top buttons board.
+now carefully close the console byt taking the bottom part and putting it over the top (Dont move the top shell as the buttons can fall) while closing it align the joysticks and it might need a little help in the powerbank module ports area.
+Screw it with long screws 17mm minimum (if you didnt use heat inserts use longer screws 20mm minimum 23mm max)
 
+Add all the additional designs and glue them with plastic glue (NOT FOR THE JOYSTICKS).
 
+Thats it for any questions feel free to contact me i am more than willing to answer!!
 
 # Bill of Materials (BOM)
 
