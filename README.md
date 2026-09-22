@@ -11,11 +11,11 @@ Fully journaled project:  https://forge.hackclub.com/projects/425
 This is an ESP32 S3 handheld console with many features and a sick look.
 The most awsome part? You can build your own game with its simple lua API the capabilities are endless!!
 Too bored to make your own game? Good news this console can also emulate NES games :D
-Using an ESP32 S3 as the main brain of the console unlocks many possibilities the fast proccesing power will deliver enought performance for any (optimazed) lua game.
+Using an ESP32 S3 as the main brain of the console unlocks many possibilities the fast proccesing power will deliver enough performance for any (optimazed) lua game.
 
 ---
 
-# ✨ Features
+# ✨🏗️ Hardware features
 
 ## 📳 Haptics
 - 2 Vibration motors one in each side with dynamic setup  
@@ -37,9 +37,8 @@ Using an ESP32 S3 as the main brain of the console unlocks many possibilities th
 
 ---
 
----
 
-# ✨ Features
+# ✨👾 Software features
 
 ## 📶 WiFi
 - Manage sd card(configure files)  
@@ -223,18 +222,26 @@ Final look:
 
 Thats it for any questions feel free to contact me i am more than willing to answer!!
 
-# FIRMWARE SETUP
+# 👾 FIRMWARE SETUP/ GUIDE
+-Most libraries can be downloaded via arduino IDE however some libraries are modified to fit the needs of the project.
 
--To set up the sd card first FORMAT it (ALL FILES WILL BE DELETED) and then download and transfer the whole "SD CARD" folder in the repo
-If for any reason you need to change any images/icons they need to be name exactly the same and the resolutuion should be the same.
--Configure your home wifi's ssid and password in settings.json
--Configure the board set board settings in "Tools" tab in arduino to this before uploading the code
+-Go to documents/arduino/libraries/TFT_eSPi/User_Setups and add the "ConsoleUserSetup.h" from this repo then find the User_Setup_Select.h comment out with "//" the previous #include <....> and add the line: #include <User_Setups/ConsoleUserSetup.h>
+-Before uploading any code configure the board settings in "Tools" tab in arduino IDE to this:
 
 <img width="651" height="1051" alt="image" src="https://github.com/user-attachments/assets/fc4dd8d0-5f6a-4042-8bc6-7a8647ddf9fe" />
 
 now upload the code this should take several minutes
 
--Button mapping wrong ?? Connect you pc to the COM port of the esp32 open serial monitor in arduino IDE after each button press a number shows match this with the configuration in "ButtonManager.h"
+-To set up the sd card first i reccomend FORMATING it to FAT32 (ALL FILES WILL BE DELETED) and then download and transfer the whole "SD CARD" folder found in this repo.
+If for any reason you need to change any images/icons they need to be name exactly the same and the resolutuion should be the same.
+-Configure your home wifi's ssid and password in settings.json
+-Wanna add your music? Create a foler in /music this will be the playlist add any song you want in either .mp3 or .wav form (.wav is lighter on proccesing power but bigger file .mp3 required heavier proccesing but smaller file both should be perfectly fine) you can also include the info.json file found in the dummyPlaylist (only artist matters) but most importantly a "cover.jpg" which should strictly be 128x128 pixels.
+
+-Wanna add more NES games? add any NES game file (should be .rom) in "nesGames" folder (for legal reasons i cant provide any links to find those) make sure you own the copyrights for it!
+
+-Wanna add more Lua games? lua games are structured in folders the folder should contain a "main.lua" which is the excecutable code. Optionally you can add an icon image "Icon.bmp" (46x46) and a meta.json which includes tags which show in the game list little icons <img width="126" height="113" alt="image" src="https://github.com/user-attachments/assets/9886e647-eceb-4e5b-b250-b48d1801ec8e" /> valid tags are "single" , "mpu6050" , "multi" in the meta.json you can also add the author (the creator of the game).
+
+-Button mapping is wrong?? Connect you pc to the COM port of the esp32 open serial monitor in arduino IDE after each button press a number shows match this with the configuration in "ButtonManager.h"
 <img width="677" height="811" alt="image" src="https://github.com/user-attachments/assets/79cad017-c079-42be-b7be-6d95b5d6e860" />
 
 For further questions please contact me!
@@ -266,11 +273,19 @@ For further questions please contact me!
 |PETG Purple Creality| The secondary color filament|~20gr|  8.00 € (1kg) | [Skroutz](https://www.skroutz.gr/s/61674982/creality3d-3d-printer-filament-1-75mm-mov-1kg-3301030045.html)| This is for refrence only its the filament i used to make my version any filament type and color will work|
 |FEP Copper Wire 30AWG| Signal wires| ~4m | 1.5 (10m)| [AliExpress](https://www.aliexpress.com/item/1005008851767447.html)| Just for refrence any wire 28-32 AWG will work|
 | 24AWG 8cm Fly Jumper Wire Tin Conductor Wires| Power higher current cable |~14 pcs| 1.73 (120pcs) | [AliExpress](https://www.aliexpress.com/item/1005008194967488.html)| Just for refrence any wire 22-24 AWG will work|
+|SD Card| Used as storage for everything| 1 | ~ | ~ | You can use any sd card available that can be formated to FAT32|
 
 # "Credits"
 Thanks to flaticon and their amazing artists who share their creations free of charge.
 
+<a href="https://www.flaticon.com/free-icons/gaming" title="gaming icons">Gaming icons created by Smashicons - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Magnific - Flaticon</a>
+
 <a href="https://www.flaticon.com/free-icons/alien" title="alien icons">Alien icons created by Freepik - Flaticon</a>
+
 <a href="https://www.flaticon.com/free-icons/next-song" title="next song icons">Next song icons created by bsd - Flaticon</a>
+
 <div> Icons made by <a href="https://www.flaticon.com/authors/bsd" title="bsd"> bsd </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+
 <a href="https://www.flaticon.com/free-icons/playback" title="playback icons">Playback icons created by bsd - Flaticon</a>
