@@ -3,4 +3,9 @@
 2. Arduino-Lua
 3. SD
 4. MPU6050_light
-5. ESP32-A2DP
+5. ESP32-BLE-Gamepad (With NimBle)
+6. JPEGDecoder
+7. Lua_5.1_for_ESP32
+8. ESP32-audioI2S-master
+9. Cdrv8833
+10. Adafruit_MCP23017_Arduino_Library
