@@ -1,7 +1,7 @@
 # 🎮 esp32-console
 
 # 🔥⚒️
-Before starting i want to thank Forge which helped me actually finishing this project and not throwing to my drafts!
+Before starting I want to thank Forge which helped me actually finishing this project and not throwing to my drafts!
 Fully journaled project:  https://forge.hackclub.com/projects/425
 
 ---
@@ -12,6 +12,8 @@ This is an ESP32 S3 handheld console with many features and a sick look.
 The most awsome part? You can build your own game with its simple lua API the capabilities are endless!!
 Too bored to make your own game? Good news this console can also emulate NES games :D
 Using an ESP32 S3 as the main brain of the console unlocks many possibilities the fast proccesing power will deliver enough performance for any (optimazed) lua game.
+
+This project was one of my earliest ideas in the hardware/ software aspect which I repeatedly abandoned but finalled locked in to finish it. I wanted to build this project for 2 main reasons: first one I wanted to test my abilities in CAD, coding, hardware and basically designing a product from nothing and secondly because I wanted to play and create my own games which I can now do.
 
 ---
 
@@ -51,7 +53,7 @@ Using an ESP32 S3 as the main brain of the console unlocks many possibilities th
 - Can play music saved on the SD (on the built in speakers)
 
 ## 🖥️ PC (with python on the server side)
-- Connect with laptop/pc and screen mirror the pc's screen to the console (i know kinda useless but i liked)
+- Connect with laptop/pc and screen mirror the pc's screen to the console (I know kinda useless but I liked)
 - Controled screen mirror similiar as above but with control (such as joystick as mouse) could potentially play pc games on the console
 
 ## 🎮 Gamepad/ Steering mode
@@ -61,7 +63,7 @@ Using an ESP32 S3 as the main brain of the console unlocks many possibilities th
 ---
 
 # ⚠️ IMPORTANT NOTES
-- In my version i use a tft display with a ili9341 display driver (40 Mhz) I however recommend using a newer ST7789 which supports up to 80 Mhz, firmware is designed for the ili9341 but can provide setup help for the newer.
+- In my version I use a tft display with a ili9341 display driver (40 Mhz) I however recommend using a newer ST7789 which supports up to 80 Mhz, firmware is designed for the ili9341 but can provide setup help for the newer.
 - This project isn't perfect and can have some issues on fast graphics. Optimazed lua and NES games can run well with plenty fps.
 - The audio is stereo which means both speakers output the same audio.
 - This project requires a lot of soldering and patience wouldn't recommend for beginners
@@ -132,7 +134,7 @@ Now flip the board and connect the 3v3 output from the regulator to both the mpu
 Connect all the ground pads together.
 Now you need to make sure not to mess this up as it can damage the components
 connect the regulator voltage input (we will connect the 5volts on it later) to the drv8833 input, the amplifier's input and to the the diode.
-For the power cables i recomend a bit thicker cable such as 24-26 awg.
+For the power cables I recomend a bit thicker cable such as 24-26 awg.
 
 Now connect with 30 awg cable the scl and sda pins of the mcp to the mpu6050 (since they share the same bus)
 with long pieces of 30awg cable extend the pre existing cables of the vibrating motors and then connect those to the drv8833 out1/out2 and out3/out4.
@@ -143,13 +145,13 @@ and set it aside the main board (on the drv8833 side and usb ports showing the m
 Wont get in-depth here but connect the components of the main board to the esp32 based on the schematic use 30awg for all the signal cables
 and 24-26 awg for power cables going from the diode to the esp32 VIN (double check the gpio pin says VIN/5v and not 3v3, impotant for not frying the chip). 
 
-Lets now move to the joysticks what i recommend is to connect the switch pins of the joysticks to the mcp23170 before screwing the main board in the shell, the rest can be connected any time to the corresponding esp32 gpio and gnd /3v3 (Make 100% sure you take power from a 3v3 source and not a 5volt on since this will burn the esp32)
+Lets now move to the joysticks what I recommend is to connect the switch pins of the joysticks to the mcp23170 before screwing the main board in the shell, the rest can be connected any time to the corresponding esp32 gpio and gnd /3v3 (Make 100% sure you take power from a 3v3 source and not a 5volt on since this will burn the esp32)
 
-Lets now set up the switch take the 3d printed holder and place it through ( also make sure the lever lenght is around 2mm) after that procceed to connect it as the schematik shows with 24 awg i also reccomend using some heatshrinks.
+Lets now set up the switch take the 3d printed holder and place it through ( also make sure the lever lenght is around 2mm) after that procceed to connect it as the schematik shows with 24 awg I also reccomend using some heatshrinks.
 
 This should be the hardest part but take the side button boards lay them in the correct side and connect all the disconnected cables (except the gnd) to the corresponding pin of the mcp23170 and take the gnd cables and connect them with any gnd connection you find. 
 
-This is now the part which needs the most attention soldering the wires on the li ion cell for this i highly recommend finding a tutorial on youtube and follow it through. I have to note here that soldering directly on li ion cells can be dangerous be exctremly careful or buy lion cells with pre connected tabs/ cables. After connecting the wires secure both ends with electrical tape.
+This is now the part which needs the most attention soldering the wires on the li ion cell for this I highly recommend finding a tutorial on youtube and follow it through. I have to note here that soldering directly on li ion cells can be dangerous be exctremly careful or buy lion cells with pre connected tabs/ cables. After connecting the wires secure both ends with electrical tape.
 !Do not connect the battery/batteries to the powerbank module yet.!
 Note: If you use 2 different cells check with a multimeter that the voltages are the same for both batteries before connecting or huge current will pass through and damage sometihng. From my own testing with one battery it has plenty play time. Make abssolutly sure that you connect them in parallel or you could burn everything. For the 2 battery version the only difference in the 3d model is the left battery cover. 
 
@@ -220,7 +222,7 @@ Final look:
 <img width="640" height="480" alt="IMG_8321" src="https://github.com/user-attachments/assets/44a6afdf-188b-4aaa-b1e8-e3bcbce32ba5" />
 <img width="640" height="480" alt="IMG_8322" src="https://github.com/user-attachments/assets/b8259e9a-9a71-433f-89a0-7cfe3e85d5fd" />
 
-Thats it for any questions feel free to contact me i am more than willing to answer!!
+Thats it for any questions feel free to contact me I am more than willing to answer!!
 
 # 👾 FIRMWARE SETUP/ GUIDE
 -Most libraries can be downloaded via arduino IDE however some libraries are modified to fit the needs of the project.
@@ -232,12 +234,12 @@ Thats it for any questions feel free to contact me i am more than willing to ans
 
 now upload the code this should take several minutes
 
--To set up the sd card first i reccomend FORMATING it to FAT32 (ALL FILES WILL BE DELETED) and then download and transfer the whole "SD CARD" folder found in this repo.
+-To set up the sd card first I reccomend FORMATING it to FAT32 (ALL FILES WILL BE DELETED) and then download and transfer the whole "SD CARD" folder found in this repo.
 If for any reason you need to change any images/icons they need to be name exactly the same and the resolutuion should be the same.
 -Configure your home wifi's ssid and password in settings.json
 -Wanna add your music? Create a foler in /music this will be the playlist add any song you want in either .mp3 or .wav form (.wav is lighter on proccesing power but bigger file .mp3 required heavier proccesing but smaller file both should be perfectly fine) you can also include the info.json file found in the dummyPlaylist (only artist matters) but most importantly a "cover.jpg" which should strictly be 128x128 pixels.
 
--Wanna add more NES games? add any NES game file (should be .rom) in "nesGames" folder (for legal reasons i cant provide any links to find those) make sure you own the copyrights for it!
+-Wanna add more NES games? add any NES game file (should be .rom) in "nesGames" folder (for legal reasons I cant provide any links to find those) make sure you own the copyrights for it!
 
 -Wanna add more Lua games? lua games are structured in folders the folder should contain a "main.lua" which is the excecutable code. Optionally you can add an icon image "Icon.bmp" (46x46) and a meta.json which includes tags which show in the game list little icons <img width="126" height="113" alt="image" src="https://github.com/user-attachments/assets/9886e647-eceb-4e5b-b250-b48d1801ec8e" /> valid tags are "single" , "mpu6050" , "multi" in the meta.json you can also add the author (the creator of the game).
 
@@ -269,8 +271,8 @@ For further questions please contact me!
 | MPU6050 sensor | For interactive games and many cool features | 1 | 2.84€ | [AliExpress](https://www.aliexpress.com/item/1005008714169630.html) | I bought this on a sensor pack so the linked product isn't tested |
 | Hall Effect Electromagnetic Joystick K-SILVER JH16 | Used for making the console gamepad "ready" and also for game/ui controlling | 2 | 12.15€ (2pcs) | [AliExpress](https://www.aliexpress.com/item/1005009646184648.html) | Those are some joysticks that are thinner than the normal 2$ modules which still offer the button click. |
 |Powerbank module| Charges the li-ion battery and charges other devices| 1 | 1.11€ | [AliExpress](https://www.aliexpress.com/item/1005007300134658.html) | Basically its used as the li ion charger but it also offers 5volt output and you can charge other devices from the console |
-|PETG-CF filament Elegoo black| The main body filament|~ 100gr |15.78€ (0.5kg) | [Skroutz](https://www.skroutz.gr/s/66648050/elegoo-petg-cf-3d-printer-filament-1-75mm-mayro-0-5kg-50-203-0647.html?product_id=300656250&sponsored=featured_similar) | This is for refrence only its the filament i used to make my version any filament type and color will work|
-|PETG Purple Creality| The secondary color filament|~20gr|  8.00 € (1kg) | [Skroutz](https://www.skroutz.gr/s/61674982/creality3d-3d-printer-filament-1-75mm-mov-1kg-3301030045.html)| This is for refrence only its the filament i used to make my version any filament type and color will work|
+|PETG-CF filament Elegoo black| The main body filament|~ 100gr |15.78€ (0.5kg) | [Skroutz](https://www.skroutz.gr/s/66648050/elegoo-petg-cf-3d-printer-filament-1-75mm-mayro-0-5kg-50-203-0647.html?product_id=300656250&sponsored=featured_similar) | This is for refrence only its the filament I used to make my version any filament type and color will work|
+|PETG Purple Creality| The secondary color filament|~20gr|  8.00 € (1kg) | [Skroutz](https://www.skroutz.gr/s/61674982/creality3d-3d-printer-filament-1-75mm-mov-1kg-3301030045.html)| This is for refrence only its the filament I used to make my version any filament type and color will work|
 |FEP Copper Wire 30AWG| Signal wires| ~4m | 1.5 (10m)| [AliExpress](https://www.aliexpress.com/item/1005008851767447.html)| Just for refrence any wire 28-32 AWG will work|
 | 24AWG 8cm Fly Jumper Wire Tin Conductor Wires| Power higher current cable |~14 pcs| 1.73 (120pcs) | [AliExpress](https://www.aliexpress.com/item/1005008194967488.html)| Just for refrence any wire 22-24 AWG will work|
 |SD Card| Used as storage for everything| 1 | ~ | ~ | You can use any sd card available that can be formated to FAT32|
