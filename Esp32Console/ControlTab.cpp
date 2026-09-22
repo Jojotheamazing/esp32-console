@@ -133,18 +133,15 @@ void ControlTab::startSteering() {
 void ControlTab::redrawSteering(float steerValue, int16_t yValue) {
   TFT_eSprite* steeringCanvas = getCanvas("Steering");
 
-  // Wheel
   steeringCanvas->setPivot(85, 90);
   drawSpriteRotated("Wheel", 80, 80, steerValue, TFT_RED, steeringCanvas);
 
-  // Grey background bar
   steeringCanvas->fillRect(235, 27, 22, 126, COLOR_HINT);
 
-  // Accel/brake overlay
   yValue = constrain(yValue, (int16_t)-100, (int16_t)100);
   const int16_t barX = 237, barW = 18;
-  const int16_t midY = 27 + 126 / 2;  // 90
-  const int16_t halfH = 122 / 2;      // 63
+  const int16_t midY = 27 + 126 / 2;
+  const int16_t halfH = 122 / 2;
 
   int16_t barHeight = (int16_t)((abs(yValue) * halfH) / 100);
 
