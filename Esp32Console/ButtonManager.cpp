@@ -51,17 +51,15 @@ void InputManager::_initMCP()
   _mcp.clearInterrupts();
 }
 
-// ──────────────────────────────────────────────────────────────
 void InputManager::update()
 {
-  // ── Clear single-frame edges ──────────────────────────────
+
   for (int i = 0; i < BTN_COUNT; i++) {
     _btn[i].pressedEdge = false;
     _btn[i].relEdge     = false;
     _btn[i].repeated    = false;
   }
 
-  // ── Handle ISR (debounced) ────────────────────────────────
   if (_isrFired) {
     _isrFired = false;
     delay(DEBOUNCE_MS);
@@ -73,7 +71,6 @@ void InputManager::update()
     _mcp.clearInterrupts();
   }
 
-  // ── Timing: held + repeat ─────────────────────────────────
   uint32_t now = millis();
   for (int i = 0; i < BTN_COUNT; i++) {
     BtnState& b = _btn[i];
@@ -97,7 +94,6 @@ void InputManager::update()
 
 void InputManager::notify() { update(); }
 
-// ──────────────────────────────────────────────────────────────
 void InputManager::_processChanges(uint16_t current)
 {
   uint16_t changed = current ^ _lastState;
@@ -106,7 +102,7 @@ void InputManager::_processChanges(uint16_t current)
     uint16_t mask = (1u << i);
     if (!(changed & mask)) continue;
 
-    bool nowDown = !(current & mask);   // active-low
+    bool nowDown = !(current & mask);
 
     _btn[i].down = nowDown;
 
@@ -124,14 +120,12 @@ void InputManager::_processChanges(uint16_t current)
   }
 }
 
-// ──────────────────────────────────────────────────────────────
 void InputManager::_fireCb(ButtonID id, InputEvent evt)
 {
   for (int i = 0; i < MAX_LISTENERS; i++)
     if (_listeners[i]) _listeners[i](id, evt);
 }
 
-// ── State queries ─────────────────────────────────────────────
 bool InputManager::pressed (ButtonID b) const { return _btn[b].pressedEdge; }
 bool InputManager::released(ButtonID b) const { return _btn[b].relEdge;     }
 bool InputManager::isDown  (ButtonID b) const { return _btn[b].down;        }
@@ -144,7 +138,6 @@ bool InputManager::anyPressed() const {
   return false;
 }
 
-// ── Listeners ─────────────────────────────────────────────────
 bool InputManager::addListener(InputCallback cb) {
   for (int i = 0; i < MAX_LISTENERS; i++) {
     if (!_listeners[i]) { _listeners[i] = cb; return true; }
@@ -159,8 +152,6 @@ bool InputManager::removeListener(InputCallback cb) {
   }
   return false;
 }
-
-// ── Debug ─────────────────────────────────────────────────────
 const char* InputManager::buttonName(ButtonID btn) const {
   if (btn >= BTN_COUNT) return "??";
   return BTN_NAMES[btn];
