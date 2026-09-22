@@ -3,6 +3,7 @@
 # 🔥⚒️
 Before starting I want to thank Forge which helped me actually finishing this project and not throwing to my drafts!
 Fully journaled project:  https://forge.hackclub.com/projects/425
+All 3d models available in: https://cad.onshape.com/documents/4f867cde0156033dadc87c73/w/ddabea45654a6a1e826b5495/e/dd9f599f0ffd93bcb053a424?renderMode=0&uiState=6ab2e4172b9c8dddb3ef7906
 
 ---
 
