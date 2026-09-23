@@ -72,6 +72,8 @@ This project was one of my earliest ideas in the hardware/ software aspect which
 -The System expects specific SD structure please follow it or the console wont function properly.
 
 # 🛠️ INSTRUCTIONS
+In the files you will find 2 folders "MainColor" and "SecondaryColor" each containing the 3d models in .step (for each part) and a .3mf for the complete for each color. The SecondaryColor is the purple (in my build) and the MainColor the black. If you need to make any changes I recomend seeing the onshape link at the start. Some parts might be tiny and ruin the print, if you are unsure of your printer abilities you could print them in different times or with a 0.2mm nozzle. (The black filament listed is Carbon Fiber and requires harnened steel nozzle)
+
 The wire lenghts might not apply to reality please check by roughly laying it from point a to b before cutting.
 
 First step: perfboard cutting
