@@ -200,11 +200,17 @@ Add the volume button in here (you might need to cut the holder a bit)
 <img width="664" height="729" alt="image" src="https://github.com/user-attachments/assets/ef1f0270-d752-4e67-a810-d649266efc95" />
 
 And connect the remaining cables from before (the mcp23017 and the ground)  to these spots (red=mcp cable and black=ground)
+
 <img width="722" height="602" alt="image" src="https://github.com/user-attachments/assets/7843de0a-eec0-455e-bb47-7fe96a0da2a8" />
+
 I reccomend using a bit of super glue to better hold it in place but be careful not to block the rotating mechanism.
 
 Now before connecting the battery check with a multimeter there is no continuity in the circuit between ground and V+.
-If everything looks good proceed to connect the battery to the powerbank module (with the switch closed) !IN CORRECT POLARITY!
+If everything looks good proceed to connect the battery !IN CORRECT POLARITY! to the powerbank module (with the switch to off) 
+
+<img width="1469" height="1011" alt="image" src="https://github.com/user-attachments/assets/e85b0459-096c-4da1-8fcb-2dcb1c6f3058" />
+
+
 
 Lets now move on puting the whole thing together 
 But firstly double check that every connection is made and you should be able to fully turn it on before closing it.
@@ -245,7 +251,10 @@ If for any reason you need to change any images/icons they need to be name exact
 
 -Wanna add more NES games? add any NES game file (should be .rom) in "nesGames" folder (for legal reasons I cant provide any links to find those) make sure you own the copyrights for it!
 
--Wanna add more Lua games? lua games are structured in folders the folder should contain a "main.lua" which is the excecutable code. Optionally you can add an icon image "Icon.bmp" (46x46) and a meta.json which includes tags which show in the game list little icons <img width="126" height="113" alt="image" src="https://github.com/user-attachments/assets/9886e647-eceb-4e5b-b250-b48d1801ec8e" /> valid tags are "single" , "mpu6050" , "multi" in the meta.json you can also add the author (the creator of the game).
+-Wanna add more Lua games? lua games are structured in folders the folder should contain a "main.lua" which is the excecutable code. Optionally you can add an icon image "Icon.bmp" (46x46) and a meta.json which includes tags which show in the game list little icons
+<img width="126" height="113" alt="image" src="https://github.com/user-attachments/assets/9886e647-eceb-4e5b-b250-b48d1801ec8e" /> 
+
+valid tags are "single" , "mpu6050" , "multi" in the meta.json you can also add the author (the creator of the game).
 
 -Button mapping is wrong?? Connect you pc to the COM port of the esp32 open serial monitor in arduino IDE after each button press a number shows match this with the configuration in "ButtonManager.h"
 <img width="677" height="811" alt="image" src="https://github.com/user-attachments/assets/79cad017-c079-42be-b7be-6d95b5d6e860" />
