@@ -3,11 +3,11 @@
     "sleepTimeout": 30
   },
   "audio": {
-    "volume": 8
+    "volume": 30
   },
   "wifi": {
-    "ssid": "Vodafone2025",
-    "password": "stelios123"
+    "ssid": "YourSSID",
+    "password": "YourPassword"
   },
   "Joysticks": {
     "centerLX": 2048,
