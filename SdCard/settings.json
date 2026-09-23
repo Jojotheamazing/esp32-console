@@ -1,0 +1,21 @@
+{
+  "display": {
+    "sleepTimeout": 30
+  },
+  "audio": {
+    "volume": 8
+  },
+  "wifi": {
+    "ssid": "Vodafone2025",
+    "password": "stelios123"
+  },
+  "Joysticks": {
+    "centerLX": 2048,
+    "centerRX": 2048,
+    "centerLY": 2048,
+    "centerRY": 2048
+  },
+  "Haptics": {
+    "VibrationEnabled": true
+  }
+}
