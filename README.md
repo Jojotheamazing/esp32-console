@@ -17,6 +17,7 @@ Using an ESP32 S3 as the main brain of the console unlocks many possibilities th
 
 This project was one of my earliest ideas in the hardware/ software aspect which I repeatedly abandoned but finalled locked in to finish it. I wanted to build this project for 2 main reasons: first one I wanted to test my abilities in CAD, coding, hardware and basically designing a product from nothing and secondly because I wanted to play and create my own games which I can now do.
 
+3D preview:
 <img width="1094" height="875" alt="image" src="https://github.com/user-attachments/assets/20bc168f-a52c-466a-abdf-6b9f6ddc6211" />
 <img width="1136" height="512" alt="image" src="https://github.com/user-attachments/assets/7c26e2a1-43a8-46cb-b1da-167b5e7b6199" />
 <img width="1460" height="542" alt="image" src="https://github.com/user-attachments/assets/6d4bf4d8-4a21-4c94-9f54-a5df30303530" />
