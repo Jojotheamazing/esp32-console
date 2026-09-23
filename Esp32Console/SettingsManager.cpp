@@ -104,9 +104,9 @@ bool loadSettings() {
 
 
   settings.ssid =
-    String(doc["wifi"]["ssid"] | "");
+    String(doc["wifi"]["ssid"] | "YouSsid");
   settings.password =
-    String(doc["wifi"]["password"] | "");
+    String(doc["wifi"]["password"] | "YourPassword");
 
   settings.centerLX = doc["Joysticks"]["centerLX"] | 2048;
   settings.centerRX = doc["Joysticks"]["centerRX"] | 2048;
