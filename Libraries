@@ -9,3 +9,8 @@
 8. ESP32-audioI2S-master
 9. Cdrv8833
 10. Adafruit_MCP23017_Arduino_Library
+11. DSN_Nes_Emulator_Universal* (https://github.com/derdacavga/DSN-Nes-Emulator-Universal)
+
+Download all the libraries in arduino IDE except the ones with*
+
+*Have been modified see "Modified libraries" folder download them and place them in arduino/libraries
