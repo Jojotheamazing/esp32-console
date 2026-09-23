@@ -292,6 +292,9 @@ Thanks to flaticon and their amazing artists who share their creations free of c
 
 <a href="https://www.flaticon.com/free-icons/next-song" title="next song icons">Next song icons created by bsd - Flaticon</a>
 
+And this wonderful project which made the NES emulation possible.
+https://github.com/derdacavga/DSN-Nes-Emulator-Universal
+
 <div> Icons made by <a href="https://www.flaticon.com/authors/bsd" title="bsd"> bsd </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
 
 <a href="https://www.flaticon.com/free-icons/playback" title="playback icons">Playback icons created by bsd - Flaticon</a>
