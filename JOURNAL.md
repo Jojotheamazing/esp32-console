@@ -29,7 +29,7 @@ Update: i decided to add them now so i spend more than a half an hour adding the
 Sorry for any mistakes on my end!
 
 
-# 2026-09-23: 2026-05-16: Breadboard Assembly
+#  2026-05-16: Breadboard Assembly
 
 **Total time spent: 1 Hours**
 
@@ -40,7 +40,7 @@ So I made a quick prototype of the console in a breadboard but its basically ver
 ![image0 (1).jpeg](https://cdn.hackclub.com/019e310d-16e6-7357-9cfe-5a690bb06e65/image0%20(1).jpeg)
 ![image0.jpeg](https://cdn.hackclub.com/019e310d-329f-7d30-b5a3-2b034d7442a3/image0.jpeg)
 
-# 2026-09-23: 2026-05-16: Mcp23017
+#  2026-05-16: Mcp23017
 
 **Total time spent: 0.5 Hours**
 
@@ -50,7 +50,7 @@ So I added the mcp23017 chip so now I can add up to 16 buttons with only 3 gpios
 ![image.jpeg](https://cdn.hackclub.com/019e316b-408e-774a-b59e-916c3c6a041e/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e316b-78dc-735f-beb6-d4ad081714e7/image.jpeg)
 
-# 2026-09-23: 2026-05-17: Buttons Coding
+#  2026-05-17: Buttons Coding
 
 **Total time spent: 1.25 Hours**
 
@@ -60,7 +60,7 @@ An important aspect of this project is how the buttons are handled. So there nee
 ![image0 (7).jpeg](https://cdn.hackclub.com/019e3638-d713-71bd-9730-d94d0a833318/image0%20(7).jpeg)
 ![image1 (3).jpeg](https://cdn.hackclub.com/019e3638-f60e-738c-b633-7000776c31f8/image1%20(3).jpeg)
 
-# 2026-09-23: 2026-05-17: Tabs basic coding
+#  2026-05-17: Tabs basic coding
 
 **Total time spent: 3.5 Hours**
 
@@ -72,7 +72,7 @@ So I did the basic coding for the tabs. By tabs I mean the screens at the start 
 ![image.jpeg](https://cdn.hackclub.com/019e374e-6633-70d4-8dcf-97602c90c72c/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e374e-a037-7c15-8511-c1382ead801e/image.jpeg)
 
-# 2026-09-23: 2026-05-18: Inner tab game code
+#  2026-05-18: Inner tab game code
 
 **Total time spent: 1 hour**
 
@@ -84,7 +84,7 @@ So I coded the inner tab design of the games tab as I said before. So it’s lik
 
 ![image.jpeg](https://cdn.hackclub.com/019e3c5f-8dc5-7061-bfb5-114c5c1fc075/image.jpeg)
 
-# 2026-09-23: 2026-05-20: Music tab coding
+#  2026-05-20: Music tab coding
 
 **Total time spent: 4.5 hours**
 
@@ -96,7 +96,7 @@ So after 5 hours I managed to make the tab system that I wanted. So it uses a si
 ![image.jpeg](https://cdn.hackclub.com/019e46da-5111-7fe3-a8a8-bc3d37603a77/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e46da-8ea6-7911-b8df-593b3b2bf42d/image.jpeg)
 
-# 2026-09-23: 2026-05-21: Pam8403
+#  2026-05-21: Pam8403
 
 **Total time spent: 1.5 hour**
 
@@ -105,7 +105,7 @@ So after 5 hours I managed to make the tab system that I wanted. So it uses a si
 Made a lilts demo sketch for the pam8403 but I couldn’t get it to work properly. It just made weird noises. I just figured out that pam8403 ain’t really great with an esp32 so I just left it. I will order some better i2s amplifier and will try those ones on the meanwhile i am going to ignore music and sound for a while or only use Bluetooth. 
 ![image.jpeg](https://cdn.hackclub.com/019e4ba2-f891-71eb-98fc-dba7de90ea38/image.jpeg)
 
-# 2026-09-23: 2026-05-22: Settings tab design
+#  2026-05-22: Settings tab design
 
 **Total time spent: 0.5 hours**
 
@@ -114,7 +114,7 @@ Made a lilts demo sketch for the pam8403 but I couldn’t get it to work properl
 So I created a simple like setting screen with a list of the settings I think I will need but I still haven’t created the actual setting change and the subtabs of each selection. 
 ![image.jpeg](https://cdn.hackclub.com/019e50f0-b411-739c-a700-da59cb485d8a/image.jpeg)
 
-# 2026-09-23: 2026-05-23: Settings tab pt2
+#  2026-05-23: Settings tab pt2
 
 **Total time spent: 3 Hours**
 
@@ -124,7 +124,7 @@ Previously the settings tab was just the subtabs it has but now I actually add f
 ![image.jpeg](https://cdn.hackclub.com/019e54e0-4d92-7cdf-9a58-db82f031aa09/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e54e0-85a4-7036-86bc-0722099d3b6d/image.jpeg)
 
-# 2026-09-23: 2026-05-24: Bluetooth fixes
+#  2026-05-24: Bluetooth fixes
 
 **Total time spent: 2.25 Hours**
 
@@ -135,7 +135,7 @@ So I got some time between studying and I read the header file of the Bluetooth 
 ![image.jpeg](https://cdn.hackclub.com/019e5b91-9b39-7bb1-8638-7a9dc0452ed1/image.jpeg)
 (Note: there aren’t any visible changes from previous version because I can’t show them in images )
 
-# 2026-09-23: 2026-05-25: Sanity crisis
+#  2026-05-25: Sanity crisis
 
 **Total time spent: 4.25 Hours**
 
@@ -147,7 +147,7 @@ So the title sums everything up. I decided that today’s task was to implement 
 ![image.jpeg](https://cdn.hackclub.com/019e60b1-3fe7-7e73-a26c-de3a81364e87/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e60b1-6baf-7b6f-b726-9ee578cf4f86/image.jpeg)
 
-# 2026-09-23: 2026-05-26: GitHub readme
+#  2026-05-26: GitHub readme
 
 **Total time spent: 0.25 Hours**
 
@@ -155,7 +155,7 @@ So the title sums everything up. I decided that today’s task was to implement 
 
 I finally updated the GitHub readme and now it has emojis which for some reason took me much time and complete feature list and issue that I am working on which I hope I will remember to update. Unfortunately I still haven’t uploaded the arduino sketch and wiring diagrams since I don’t have access to my pc right now.![image.png](https://cdn.hackclub.com/019e6590-8175-7176-a28e-cdda30cafc20/image.png)
 
-# 2026-09-23: 2026-05-27: Little game try
+#  2026-05-27: Little game try
 
 **Total time spent: 0 hours**
 
@@ -164,7 +164,7 @@ I finally updated the GitHub readme and now it has emojis which for some reason 
 So I made a little game using some assets by an awesome guy. I will link his website tomorrow since I don’t recall right now and I can’t find it. It’s just a simple test that the lua works fine only thig it does is move around and stop at obstacles like houses but I am facing an issue while I only draw a specific region the whole display seems to turn on and off but I am unsure what is causing this. I am not registering any hours since as it’s only for testing and fooling around. ![image.jpeg](https://cdn.hackclub.com/019e6aef-2f32-73c6-9dbd-abfabed0cebc/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e6aef-5e78-7d8e-8104-580b721b6438/image.jpeg)
 
-# 2026-09-23: 2026-05-28: Sd rewiring & sprite fix
+#  2026-05-28: Sd rewiring & sprite fix
 
 **Total time spent: 1.25 hour**
 
@@ -185,7 +185,7 @@ So today I focused on yesterday’s issue with the screen flickering when drawin
 
 I don’t have a picture that clearly shows the sprite fix since I forgot to take one.
 
-# 2026-09-23: 2026-05-29: SD WiFi config & Preferences
+#  2026-05-29: SD WiFi config & Preferences
 
 **Total time spent: 3.5 hours**
 
@@ -202,7 +202,7 @@ So how my system works is really close to the sd since everything required is st
 (Look how pretty😌)
 ![image.jpeg](https://cdn.hackclub.com/019e7467-4eed-7950-8c1f-6eadc1ccf2df/image.jpeg)
 
-# 2026-09-23: 2026-05-30: Sd research
+#  2026-05-30: Sd research
 
 **Total time spent: 0.5 hours**
 
@@ -210,7 +210,7 @@ So how my system works is really close to the sd since everything required is st
 
 So I was kinda skeptical about the speed of the whole draw display which is around 200ms per full screen redraw using a tft espi example draw jpg from sd got 117ms but that’s still around 8 fps max very slow. After some tests I found out that the biggest bottleneck is the sd read which is only around 1mbs and if my math is correct that’s around 170ms for bmp and that’s why jpg is faster since it smaller file size. I did some research and I found out about the sd mmc which esp32 provides which would basically make it 3 times+ faster so that’s a real save. Also I found that some people say that tft espi is outdated and loyvangfx is faster (I think it’s called that) so tomorrow I will try combining those 2 to see if it really makes it faster. I am optimistic that it’s possible I can get less than 50ms for full screen which would be around 20 fps max but I am unsure if that is possible. Since I don’t have an sd mmc breakout I will just solder plain pins in an sd adapter based on a photo I found ![image.png](https://cdn.hackclub.com/019e7a35-48ed-781f-82a1-b86531e3276b/image.png)
 
-# 2026-09-23: 2026-05-31: Sd speed test and tft tests
+#  2026-05-31: Sd speed test and tft tests
 
 **Total time spent: 2 hours**
 
@@ -222,7 +222,7 @@ So today I didnt really have much time because I gotta study since I am in middl
 ![image.jpeg](https://cdn.hackclub.com/019e7fd2-ca37-7a54-aced-5b6db8c87af1/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e7fd2-f05b-7f67-a9de-38e498fd564f/image.jpeg)
 
-# 2026-09-23: 2026-06-01: Video
+#  2026-06-01: Video
 
 **Total time spent: 2hours**
 
@@ -233,7 +233,7 @@ So today after the successes with the jpeg I thought about playing a video by dr
 ![image.jpeg](https://cdn.hackclub.com/019e84f0-ffa3-7539-9a3e-6d93c55eccc9/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e84f1-2b5c-7f92-8a90-fb2bb3c0145c/image.jpeg)
 
-# 2026-09-23: 2026-06-02: Esp32 s3 migration
+#  2026-06-02: Esp32 s3 migration
 
 **Total time spent: 3 hours**
 
@@ -252,7 +252,7 @@ So after some wait my esp32 s3 and bigger screen have arrived so at first I trie
 ![image.jpeg](https://cdn.hackclub.com/019e89f8-1325-7249-b86a-24a280d0e3cc/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e89f8-2ecb-7b9a-9c52-7b5995eea2a7/image.jpeg)
 
-# 2026-09-23: 2026-06-03: MAX98357A re-breaboarding
+#  2026-06-03: MAX98357A re-breaboarding
 
 **Total time spent: 1.5 hours**
 
@@ -272,7 +272,7 @@ So far today I re wired the whole thing by putting a second breadboard for the e
 
 ![image.jpeg](https://cdn.hackclub.com/019e8d9e-f5a5-7b9c-9c0c-daa895c4cf8f/image.jpeg)
 
-# 2026-09-23: 2026-06-04: Max98357A wav/mp3 playback
+#  2026-06-04: Max98357A wav/mp3 playback
 
 **Total time spent: 3 Hours**
 
@@ -288,7 +288,7 @@ So as I said yesterday I was working on audio in the whole system. Today I got t
 [Clean desk 😌]
 ![image.jpeg](https://cdn.hackclub.com/019e942a-5a5f-7f7a-8cb3-20f9c57dcdeb/image.jpeg)
 
-# 2026-09-23: 2026-06-05: Rough design & mpu6050 tests
+#  2026-06-05: Rough design & mpu6050 tests
 
 **Total time spent: 2 hours**
 
@@ -300,7 +300,7 @@ Now that I am looking I only took photos from the 3d model but will update if I 
 
 ![upload failed]()
 
-# 2026-09-23: 2026-06-06: Mpu6050 integration
+#  2026-06-06: Mpu6050 integration
 
 **Total time spent: 2 hours**
 
@@ -310,7 +310,7 @@ So today I decided to add the mpu from yesterday to the main project. I turned i
 ![image.jpeg](https://cdn.hackclub.com/019e9c6e-8c9f-7d23-9dc9-2a36828e2fad/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019e9c6e-aac0-72b4-ad96-58dfad2bf148/image.jpeg)
 
-# 2026-09-23: 2026-06-07: Lua mpu6050
+#  2026-06-07: Lua mpu6050
 
 **Total time spent: 1 hour**
 
@@ -321,7 +321,7 @@ So the title is pretty self explanatory I just added the get mpu data function t
 ![image.jpeg](https://cdn.hackclub.com/019ea3a7-48e1-7d95-9433-b9ab9825fd9b/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019ea3a7-7606-70ba-b3d2-ce1fa7c94614/image.jpeg)
 
-# 2026-09-23: 2026-06-08: NES emulator
+#  2026-06-08: NES emulator
 
 **Total time spent: 1 hour**
 
@@ -332,7 +332,7 @@ So I was searching about esp32 consoles and I came across retro go but it’s on
 ![image.jpeg](https://cdn.hackclub.com/019ea8dc-58ba-7277-8c72-cb25e2c3f0ad/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019ea8dc-9db1-7afb-8f33-a1f57db12ab4/image.jpeg)
 
-# 2026-09-23: 2026-06-09: Nes emulator
+#  2026-06-09: Nes emulator
 
 **Total time spent: 2.5 hours**
 
@@ -347,7 +347,7 @@ The supplier didn’t have like what each pin is what so I missed the ground but
 ![image.jpeg](https://cdn.hackclub.com/019eae14-b3b2-7c91-84a4-29e2029c8874/image.jpeg)
 Yep the pads just broke off so I just turned to the emulator that I mentioned above. Tomorrow I will probably retry to fix the sounds conflicts and complete the integration and I might as well add the vibration motors if I get spare time.
 
-# 2026-09-23: 2026-06-10: NES emul tab
+#  2026-06-10: NES emul tab
 
 **Total time spent: 4 hours**
 
@@ -364,7 +364,7 @@ Don’t mind the bg color will fix it.
 
 ![Uploading image.jpeg...]()
 
-# 2026-09-23: 2026-06-12: NES emul part.2
+#  2026-06-12: NES emul part.2
 
 **Total time spent: 1.25 hours**
 
@@ -377,7 +377,7 @@ After making the the nes emul tab I wanted to actually make the games run. Thoug
 ![image.jpeg](https://cdn.hackclub.com/019ebd9d-f36e-7c51-9076-867c5006b024/image.jpeg)
 I thought I had an image of the menu but it seems like I forgot to take one might update tomorrow.
 
-# 2026-09-23: 2026-06-13: NES emul final
+#  2026-06-13: NES emul final
 
 **Total time spent: 1.5 hours**
 
@@ -389,7 +389,7 @@ Today I finished the nes emulator intregration and now it works amazingly well w
 ![image.jpeg](https://cdn.hackclub.com/019ec17d-07d1-75d6-91c0-1aab7772a532/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019ec17d-3764-7353-90d0-42de25ee18f5/image.jpeg)
 
-# 2026-09-23: 2026-06-14: More rough modeling
+#  2026-06-14: More rough modeling
 
 **Total time spent: 1 hour**
 
@@ -398,7 +398,7 @@ Today I finished the nes emulator intregration and now it works amazingly well w
 Today not anything crazy just some rought 3d designing of the back of the console. the design is no where finish and its just a prototype to see the sizes and how it will look.  (I am not sure how to put my timelapse here but will update when i learn how)
 ![image.png](https://cdn.hackclub.com/019ec75d-14d6-7449-bd3e-c67ea6cef551/image.png)
 
-# 2026-09-23: 2026-06-15: Joysticks added
+#  2026-06-15: Joysticks added
 
 **Total time spent: 45 minutes**
 
@@ -408,7 +408,7 @@ The title is pretty self explanatory. For today I chose to to add the joysticks 
 
 ![image.jpeg](https://cdn.hackclub.com/019ecc95-2b15-7264-b028-e3a7904b5275/image.jpeg)
 
-# 2026-09-23: 2026-06-16: Some joystick design
+#  2026-06-16: Some joystick design
 
 **Total time spent: 0.5 hours**
 
@@ -417,7 +417,7 @@ The title is pretty self explanatory. For today I chose to to add the joysticks 
 Ummm I tried adding the joysticks to the nes emulator it wasn’t hard I just registered it as button presses after a set value but I had some problems with random movements. I am not sure what is causing it but I will figure it out tomorrow. I tried printing the values to see if they are okay but they had some offset so I put a new function which calculates the offsets but it is really draft work and I haven’t included it to the actual axis calculation. So that’s my to do list for tomorrow. Added the functions for the joysticks in the lua engine so lua games can accessthe data pretty simple by passing a table with all the values. 
 ![image.jpeg](https://cdn.hackclub.com/019ed178-b5e1-78b3-b53b-fee3ffeb4f14/image.jpeg)
 
-# 2026-09-23: 2026-06-17: Joystick settings page
+#  2026-06-17: Joystick settings page
 
 **Total time spent: 1.4 hours**
 
@@ -430,7 +430,7 @@ Here is what I have so far
 
 I am also thinking of a full hi redesign but I think I will do it once the whole project is finished.
 
-# 2026-09-23: 2026-06-18: Final joystick page
+#  2026-06-18: Final joystick page
 
 **Total time spent: 1 hour**
 
@@ -439,7 +439,7 @@ I am also thinking of a full hi redesign but I think I will do it once the whole
 Completed the calibration and the live show for the joysticks and everything is now set. Will update this journal tomorrow. Update: fixed the calibration to actually work on the calculation by subtracting the offset this might not be the best approach but will keep for now. I also made a setting (in setting manager) for all the offsets so there is no need for calibration each time. I only have one concern and that’s a wrongfully done calibration. Let me explain if the user calibrates when the joysticks are on moved to a side then it will centre there so when you leave them the menu will constantly move and you might have to tryhard to re calibrate them.
 ![image.jpeg](https://cdn.hackclub.com/019edc70-15ac-74dd-bc61-391aa6813547/image.jpeg)
 
-# 2026-09-23: 2026-06-19: Pcb learning
+#  2026-06-19: Pcb learning
 
 **Total time spent: 0 hours**
 
@@ -450,7 +450,7 @@ Today I worked on the project on an indirect way I started learning kicad for sc
 ![image.jpeg](https://cdn.hackclub.com/019ee125-038f-71e3-9a85-ca14082afcc6/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019ee125-29fd-757c-b583-075df837d3bb/image.jpeg)
 
-# 2026-09-23: 2026-06-20: Schematic and pcb? Pt.1
+#  2026-06-20: Schematic and pcb? Pt.1
 
 **Total time spent: 2 hours**
 
@@ -459,7 +459,7 @@ Today I worked on the project on an indirect way I started learning kicad for sc
 As I have said before I am unsure if I will make a pcb because of the cost for shipping and lack of experience. However I am learning kicad so I made most of the schematic and found some suitable footprint for the pcb. I am not certain that I did it correctly but it shouldn’t be bad. I really struggled though with finding the correct symbol and footprint since I am new to all of this and still haven’t learned how to speed things up. I made some custom footprints for the amplifier and the speakers which should be fine. One more thing I am no sure about is if I decide to make a pcb should it be with the development boards or should I include the bare chips with all of their resistors capacitors and everything separately. First option could be easier and better for assembly and cheaper since I own the dev boards already however it might get a bit bulky and is a bit unprofessional which I could ignore.  Here is a pic from the schematic (I forgot to take a better one so this is kinda blurry and old version)
 ![image.jpeg](https://cdn.hackclub.com/019ee653-52e4-7d07-9700-58f8f4cf8d72/image.jpeg)
 
-# 2026-09-23: 2026-06-21: Schematic and pcb? Pt.2
+#  2026-06-21: Schematic and pcb? Pt.2
 
 **Total time spent: 1 hour**
 
@@ -472,7 +472,7 @@ this is the powerbank module footprint i made
 and this is my try with the joysticks
 ![Στιγμιότυπο οθόνης 2026-06-21 171846.png](https://cdn.hackclub.com/019eea91-884b-77b2-8d68-0825ca3fc132/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202026-06-21%20171846.png)
 
-# 2026-09-23: 2026-06-25: To do list
+#  2026-06-25: To do list
 
 **Total time spent: 2 minutes**
 
@@ -481,7 +481,7 @@ and this is my try with the joysticks
 Today I had a lot of lessons so I don’t have the time to work on the project much but I wanted to so I just made a simple to do list so I will be more organised. 
 ![image.jpeg](https://cdn.hackclub.com/019f001e-8980-7b17-aea8-680dc31d0d8b/image.jpeg)
 
-# 2026-09-23: 2026-06-26: Vibrating motor wiring
+#  2026-06-26: Vibrating motor wiring
 
 **Total time spent: 4 minutes**
 
@@ -495,7 +495,7 @@ Update:I changed it to a motor driver because I am afraid of the motors back fee
 
 ![image.jpeg](https://cdn.hackclub.com/019f0fd2-23c4-7a88-8c15-da4960af4d88/image.jpeg)
 
-# 2026-09-23: 2026-06-27: Filament choice
+#  2026-06-27: Filament choice
 
 **Total time spent: 2 minutes**
 
@@ -504,7 +504,7 @@ Update:I changed it to a motor driver because I am afraid of the motors back fee
 I chose the filament color for the design more specifically the purple that I will use for the details it’s a bit lighter than I thought but I think it will fit. For the main black color I got a Petg carbon fiber that will give a nice finish and I hope it makes it look more “professional”. 
 ![image.png](https://cdn.hackclub.com/01a0ceff-0869-74ee-903f-3b229fa40207/image.png)
 
-# 2026-09-23: 2026-06-28: Vibrating motors coding
+#  2026-06-28: Vibrating motors coding
 
 **Total time spent: 1 hour**
 
@@ -515,7 +515,7 @@ Firstly I have to mention that I changed some wires because I think those jumper
 ![image.jpeg](https://cdn.hackclub.com/019f0fd5-6f32-7891-a6c0-e64bcd0bc6c0/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019f0fd5-916e-7676-be2b-c5abde1f432f/image.jpeg)
 
-# 2026-09-23: 2026-06-29: Pc tab
+#  2026-06-29: Pc tab
 
 **Total time spent: 1 hour**
 
@@ -523,7 +523,7 @@ Firstly I have to mention that I changed some wires because I think those jumper
 
 Made the pc tab that will have screen mirror sm with control and launch games that are installed on the pc.  ![image.jpeg](https://cdn.hackclub.com/019f150d-0250-732d-9019-63ad86b28ce2/image.jpeg)
 
-# 2026-09-23: 2026-07-01: Pc tab pt2
+#  2026-07-01: Pc tab pt2
 
 **Total time spent: 20 minutes**
 
@@ -534,7 +534,7 @@ Added some like connecting to WiFi etc screens so it’s a bit more visual and s
 ![image.jpeg](https://cdn.hackclub.com/019f1f13-8118-7a22-96fa-03b8ef07ec8c/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019f1f13-a889-715b-8498-090d99af66cd/image.jpeg)
 
-# 2026-09-23: 2026-07-02: Pc tab 3
+#  2026-07-02: Pc tab 3
 
 **Total time spent: 40 minutes**
 
@@ -544,7 +544,7 @@ Started to actually work in the pc functions so far I have gotten in to actually
 ![upload failed]()
 ![Uploading image.jpeg...]()
 
-# 2026-09-23: 2026-07-03: Pc tab pt4
+#  2026-07-03: Pc tab pt4
 
 **Total time spent: 1.25 hours**
 
@@ -556,7 +556,7 @@ SO.. I I got the screen mirror to work reallyyyy well it now reaches like 28 fps
 Also I found out that the amplifier was defective and the gain pin was tied to the vin so when I tried increasing the gain by putting it on gnd it froze the whole system (I was lucky the short didn’t affect anything) so i changed it with a good one and now the speakers are louder by a fair amount. 
 ![image.jpeg](https://cdn.hackclub.com/019f296f-7f9e-7417-8af1-22f9791d6375/image.jpeg)
 
-# 2026-09-23: 2026-07-07: Ui redesign ideas
+#  2026-07-07: Ui redesign ideas
 
 **Total time spent: 4 minutes**
 
@@ -565,7 +565,7 @@ Also I found out that the amplifier was defective and the gain pin was tied to t
 Thought of some ways I can change the ui of the console so it looks more finished and nice. However I won’t be making the changes for now since I wanna firstly complete the whole software functionality and hardware. For example here is a quick sketch of how I am thinking on changing the games menu 
 ![image.jpeg](https://cdn.hackclub.com/019f3e45-1045-7165-b623-cdd9c4df48c2/image.jpeg)
 
-# 2026-09-23: 2026-07-09: Pc streaming fixes
+#  2026-07-09: Pc streaming fixes
 
 **Total time spent: 1.25 hours**
 
@@ -576,7 +576,7 @@ So I did some fixes on the pc screen mirror like adding the cursor which was not
 I played some Roblox too
 ![image.jpeg](https://cdn.hackclub.com/019f48a1-0d9f-769e-8fcf-facf30185ae8/image.jpeg)
 
-# 2026-09-23: 2026-07-10: Pc launch game
+#  2026-07-10: Pc launch game
 
 **Total time spent: 10 minutes**
 
@@ -585,7 +585,7 @@ I played some Roblox too
 So I am trying to get a function working but I yet have to figure out how I will achieve it. I am trying to like have a list with the available games on the pc and the esp32 shows the menu and you can choose one and run it. This way you choose a game and it launches on the pc then it captures only this window and all controls are send there. But I need to make some big changes since now I connect to the WiFi only when it starts streaming but to give the list to the esp32 it needs to be connected to the pc. I really want that feature but it’s kinda too “complicated” (needs lot of adjustments) so I might skip it for now. I have started working on it but really not well it just doesn’t work it shows the whole screen or nothing no list. 
 ![image.jpeg](https://cdn.hackclub.com/019f4d7e-ff37-74bd-8a48-5e9bb7fa5644/image.jpeg)
 
-# 2026-09-23: 2026-07-11: Controller mode
+#  2026-07-11: Controller mode
 
 **Total time spent: 20 minutes**
 
@@ -594,7 +594,7 @@ So I am trying to get a function working but I yet have to figure out how I will
 So I started working on a new feature which basically turn the console into a controller that can connect to the pc via Bluetooth I tried searching for it to be able to connect to Xbox and ps but it says it’s not possible. So far I managed to kind of construct the new tab but didn’t actually get it to work because I had no time to fix some bugs and re upload it. I found a ble library which is called esp32 ble gamepad which I think fits to what I need. 
 ![image.jpeg](https://cdn.hackclub.com/019f5293-16b5-7696-91a6-3a68f3ba4499/image.jpeg)
 
-# 2026-09-23: 2026-07-12: Gamepad
+#  2026-07-12: Gamepad
 
 **Total time spent: 2 hours**
 
@@ -605,7 +605,7 @@ I finally made the tab but I had only problems which I still haven’t fixed. Th
 [on setup]
 ![image.jpeg](https://cdn.hackclub.com/019f57d6-6679-7a74-8a7c-9faaaaa47f24/image.jpeg)
 
-# 2026-09-23: 2026-07-13: Gamepad kinda working
+#  2026-07-13: Gamepad kinda working
 
 **Total time spent: 2.5 hours**
 
@@ -615,7 +615,7 @@ Making the console a ble gamepad was supposed to be like an easy implementation.
 ![image.jpeg](https://cdn.hackclub.com/019f5d2a-1191-7d21-ad35-eee0994d58bc/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019f5d2a-4d04-7eff-ae53-0b10614463f3/image.jpeg)
 
-# 2026-09-23: 2026-07-14: Wiring thinking
+#  2026-07-14: Wiring thinking
 
 **Total time spent: 12 minutes**
 
@@ -624,7 +624,7 @@ Making the console a ble gamepad was supposed to be like an easy implementation.
 I have a dilemma I can’t decide if I want to use perfboard for the wiring like a big central board with the esp the mcp the amplified the mpu and the tft or I should like just mount everything in the case and connect wires to all the components. I am sure I will use for the buttons and the mcp chip probably for the esp32 too. 
 ![image.jpeg](https://cdn.hackclub.com/019f623f-2209-7efd-9da4-37c3a99b625e/image.jpeg)
 
-# 2026-09-23: 2026-07-15: 3d back button design
+#  2026-07-15: 3d back button design
 
 **Total time spent: 1 hour**
 
@@ -634,7 +634,7 @@ I remembered that I had to do some 3d designing as well for this project and so 
 ![image.png](https://cdn.hackclub.com/019f6788-6e4b-79c4-af54-6b335e309f3b/image.png)
 ![image.png](https://cdn.hackclub.com/019f6788-b61d-7a2a-9d17-f09caed6489a/image.png)
 
-# 2026-09-23: 2026-07-16: Backbutton spring design
+#  2026-07-16: Backbutton spring design
 
 **Total time spent: 45 minutes**
 
@@ -643,7 +643,7 @@ I remembered that I had to do some 3d designing as well for this project and so 
 I decided to add a little spring to retrieve the back button to the original position. It took me a while since it’s my first time designing springs. I am not sure if I need to change the design of the button to be like a slider instead of rotating. 
 ![image.jpeg](https://cdn.hackclub.com/019f6c5f-f1f4-714c-b9d6-abc50566ca6f/image.jpeg)
 
-# 2026-09-23: 2026-07-17: Mounting stuff 3d design
+#  2026-07-17: Mounting stuff 3d design
 
 **Total time spent: 1.5 hours**
 
@@ -657,7 +657,7 @@ to keep it short i added a mount for the vibration motors simple like slide in j
 ![image.png](https://cdn.hackclub.com/019f718f-8e00-7e8a-86a8-cf7d6ce9d3d4/image.png)
 ![image.png](https://cdn.hackclub.com/019f7190-0a8a-7232-b0c1-6db09f963781/image.png)
 
-# 2026-09-23: 2026-07-18: More 3d design mounts
+#  2026-07-18: More 3d design mounts
 
 **Total time spent: 17 minutes**
 
@@ -667,7 +667,7 @@ I added some mounts for the joysticks like realllyyyy simple might be one of the
 ![image.png](https://cdn.hackclub.com/019f768d-aa20-74a4-a210-353839d1bec8/image.png)
 ![image.png](https://cdn.hackclub.com/019f768d-dc4e-778f-9a21-1c8306798d46/image.png)
 
-# 2026-09-23: 2026-07-19: Even more 3d mount deisngs (tft & fixes)
+#  2026-07-19: Even more 3d mount deisngs (tft & fixes)
 
 **Total time spent: 1 Hour 7 minutes**
 
@@ -691,7 +691,7 @@ Fixed:
 ![image.png](https://cdn.hackclub.com/019f7c10-18dc-7b0c-82d5-8757f4b3ca28/image.png)
 ![image.png](https://cdn.hackclub.com/019f7c10-3f38-7a58-bd9c-231ecce49617/image.png)
 
-# 2026-09-23: 2026-07-20: battery design mount
+#  2026-07-20: battery design mount
 
 **Total time spent: 46 minutes**
 
@@ -705,7 +705,7 @@ So for the battery i closed on the old phone battery its a 2100 mah 3.8 v batter
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/Nm_n8MVq8Lzd
 
-# 2026-09-23: 2026-07-21: Minor 3d design tolerances fix
+#  2026-07-21: Minor 3d design tolerances fix
 
 **Total time spent: 1 minute**
 
@@ -714,7 +714,7 @@ So for the battery i closed on the old phone battery its a 2100 mah 3.8 v batter
 Today I didn’t have much free time because of lessons so I just fixed some tolerances that were either too big or too tight since I had forgotten to fix them. Forgot to lapse it but it was like 10 minutes so that’s alright. 
 ![image.jpeg](https://cdn.hackclub.com/019f863a-5325-7134-9a2f-f76721801dc8/image.jpeg)
 
-# 2026-09-23: 2026-07-22: Other electronic compontents mounts
+#  2026-07-22: Other electronic compontents mounts
 
 **Total time spent: 2.5 hours**
 
@@ -730,7 +730,7 @@ i figured out whats the best place to put all the electronic compontents. The pl
 
 *second lapse link: * https://lapse.hackclub.com/timelapse/xanHhk7ZELEJ
 
-# 2026-09-23: 2026-07-23: Buttons design
+#  2026-07-23: Buttons design
 
 **Total time spent: 32 minutes**
 
@@ -739,7 +739,7 @@ i figured out whats the best place to put all the electronic compontents. The pl
 Nothing crazy today I just bade the buttons for the other side I chose to do arrows I also added some small little thingies so the buttons worn rotate around. And made some mount holes for the esp32 perfboard a little further apart so the the esp32 will actually fit. 
 ![image.png](https://cdn.hackclub.com/019f9061-8774-7f71-a216-6b427c69c650/image.png)
 
-# 2026-09-23: 2026-07-24: USB labeling& cutouts  and ventilation
+#  2026-07-24: USB labeling& cutouts  and ventilation
 
 **Total time spent: 55 minutes**
 
@@ -751,7 +751,7 @@ Today i added the usbs for the esp32 s3 i went with a different design than the 
 ![image.png](https://cdn.hackclub.com/019f958a-ab0a-791f-80d2-2d7a6df12cea/image.png)
 ![image.png](https://cdn.hackclub.com/019f958a-dc0d-78d2-bb98-c46cb8851356/image.png)
 
-# 2026-09-23: 2026-07-26: Simple design adds ( idk what title to put)
+#  2026-07-26: Simple design adds ( idk what title to put)
 
 **Total time spent: 2 hours**
 
@@ -766,7 +766,7 @@ changed the colors to vizualize better the final result added the valinor icon i
 
 *second lapse link:*  https://lapse.hackclub.com/timelapse/0_WNUX8MFCHi
 
-# 2026-09-23: 2026-07-27: More astheatic design ?
+#  2026-07-27: More astheatic design ?
 
 **Total time spent: 1 hour**
 
@@ -786,7 +786,7 @@ I also redesigned the power switch because i couldnt get the purple switch to go
 I dont remember if i did anything else today but whatever
 *second lapse link: * https://lapse.hackclub.com/timelapse/18YDgSgc7a1W
 
-# 2026-09-23: 2026-07-28: Fixes & nicer design
+#  2026-07-28: Fixes & nicer design
 
 **Total time spent: 28 minutes**
 
@@ -796,7 +796,7 @@ Fixed a diameter of hole on the limit switch mount made the little stopper for t
 I swear I did something else too but I can’t recall. 
 ![image.jpeg](https://cdn.hackclub.com/019faa35-1609-7f6d-95a7-b6270dbe7adc/image.jpeg)
 
-# 2026-09-23: 2026-07-29: Hack club flagggg design
+#  2026-07-29: Hack club flagggg design
 
 **Total time spent: 30 minutes**
 
@@ -807,7 +807,7 @@ Found this little sticker on the google so I decided to add it to the back it lo
 ![image.jpeg](https://cdn.hackclub.com/019faf8e-d413-7e98-ac2b-22ac8f9eb141/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/019faf8f-047c-7ef2-bb6b-eba506066b0e/image.jpeg)
 
-# 2026-09-23: 2026-07-31: Front design (star & heart)
+#  2026-07-31: Front design (star & heart)
 
 **Total time spent: 1 hour 20 minutes**
 
@@ -823,7 +823,7 @@ Also found this star sticker on the hack club website so i added it to one side 
 ![image.png](https://cdn.hackclub.com/019fb9a7-ef05-7939-a52d-16309a5b59b3/image.png)
 ![image.png](https://cdn.hackclub.com/019fb9a8-2904-73c0-af0b-d6ed76f8caf4/image.png)
 
-# 2026-09-23: 2026-08-01: Design dielema
+#  2026-08-01: Design dielema
 
 **Total time spent: 3 minutes**
 
@@ -843,7 +843,7 @@ Now that i am looking at them again idk what they even supossed to show
 
 ![image.jpeg](https://cdn.hackclub.com/019fbefe-5c32-75fc-90c5-fe25fa5c17a8/image.jpeg)
 
-# 2026-09-23: 2026-08-02: Stickerss
+#  2026-08-02: Stickerss
 
 **Total time spent: 5 minutes**
 
@@ -853,7 +853,7 @@ Found some hack club stickers that I had lost and I will definitely add them on 
 But I will need some more ideas for the design. 
 ![image.jpeg](https://cdn.hackclub.com/019f9ac7-d38b-7527-8d6a-ce7b034d5730/image.jpeg)
 
-# 2026-09-23: 2026-08-04: Power rail
+#  2026-08-04: Power rail
 
 **Total time spent: 2 minutes**
 
@@ -862,7 +862,7 @@ But I will need some more ideas for the design.
 I am designing the power rail I decided I will use the power bank module that I have that auto step up to 5volts and add a capacitor 1000mf and 3.3 v regulator for all the 3v3 logic components 
 ![image.png](https://cdn.hackclub.com/019fce73-fecf-753d-a534-8993389ea988/image.png)
 
-# 2026-09-23: 2026-08-06: Power rail pt2
+#  2026-08-06: Power rail pt2
 
 **Total time spent: 3 minutes**
 
@@ -871,7 +871,7 @@ I am designing the power rail I decided I will use the power bank module that I 
 I will also need some diodes for the esp32 so it doesn’t backfire voltage into the battery when you connect to type c for code upload. I found those which should be good should drop the voltage less than others and should support the amps
 ![image.png](https://cdn.hackclub.com/019fd8db-9ccf-7aaf-b247-84b7b4f99e92/image.png)
 
-# 2026-09-23: 2026-08-08: First prototype print
+#  2026-08-08: First prototype print
 
 **Total time spent: 1.5 hours**
 
@@ -889,7 +889,7 @@ Today I added some screw holes that gonna hold the bottom and top shell together
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/jvncl8WQSf3o
 
-# 2026-09-23: 2026-08-09: Protoboard cutting
+#  2026-08-09: Protoboard cutting
 
 **Total time spent: 1 hour**
 
@@ -904,7 +904,7 @@ Tomorrow’s plan is to examine the 3d printed parts again writing down all the 
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/mbc5swJeE4nd
 
-# 2026-09-23: 2026-08-10: General 3d design fixes
+#  2026-08-10: General 3d design fixes
 
 **Total time spent: 2 hours**
 
@@ -919,7 +919,7 @@ I fixed some small but kinda important stuff around the 3d design like making th
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/x1EpnSZkOCyi
 
-# 2026-09-23: 2026-08-11: 2nd prototype print
+#  2026-08-11: 2nd prototype print
 
 **Total time spent: 10 minutes**
 
@@ -929,7 +929,7 @@ Today I inspected one last time and send a second prototype to be printed so i c
 ![upload failed]()
 ![image.jpeg](https://cdn.hackclub.com/019ff282-a5a8-79ae-a4d0-7d1c9da1784f/image.jpeg)
 
-# 2026-09-23: 2026-08-12: some fixes 3d design
+#  2026-08-12: some fixes 3d design
 
 **Total time spent: 16 minutes**
 
@@ -942,7 +942,7 @@ after the second 3d printed prototype i located some flaws and fixed them. First
 
 Tomorow is lock in time i am going to move in soldering most of the stuff like adding individual cables for the buttons and other stuff i am not sure i will solder each component together so i can test it in the breadboard still but we will see.
 
-# 2026-09-23: 2026-08-13: SOLDERINGGG PT1
+#  2026-08-13: SOLDERINGGG PT1
 
 **Total time spent: 2 hours**
 
@@ -962,7 +962,7 @@ Note: I managed to lapse 1 hour of work but I did roughly 3 but due to my phone 
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/Uqf3E375mkqs
 
-# 2026-09-23: 2026-08-14: SOLDERINGGG PT2
+#  2026-08-14: SOLDERINGGG PT2
 
 **Total time spent: 2.5 hours**
 
@@ -978,7 +978,7 @@ For today I wasn’t sure on what to solder so I decided to just connect all the
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/uVbCQBUA61PM
 
-# 2026-09-23: 2026-08-15: Soldering pt3
+#  2026-08-15: Soldering pt3
 
 **Total time spent: 1 hour**
 
@@ -987,7 +987,7 @@ For today I wasn’t sure on what to solder so I decided to just connect all the
 I connected some signal cables to the esp32 such as the motor driver the mpu and the amplifier had no issues with that apart that it was a bit tricky because it was space tight. However after I soldered them I realised that they don’t fit and they collide with the tft screen sd card slot so I had to make them shorter I decided to cut the header pins and solder them as smd components saving around 2 mm it was tricky since I was trying to cut them without having to solder all the cables again so I cut them while being soldered on the perfboard. To no surprise I kinda damaged the silkscreen of the components pcb. Tomorrow I will finish connecting the mpu and resolver the power cables from below and try it like that might have to bump the console thickness 1-2mm.  
 ![image.jpeg](https://cdn.hackclub.com/01a00c1a-d5ed-7482-85aa-36d9c207aa58/image.jpeg)
 
-# 2026-09-23: 2026-08-16: Soldering almost final pt
+#  2026-08-16: Soldering almost final pt
 
 **Total time spent: 3.5 hours**
 
@@ -999,7 +999,7 @@ Today was a really good day I managed to do almost all the soldering except the 
 
 ![image.jpeg](https://cdn.hackclub.com/01a00c1a-f206-786c-93fb-53e4020496d1/image.jpeg)
 
-# 2026-09-23: 2026-08-17: Soldering final part (for now)
+#  2026-08-17: Soldering final part (for now)
 
 **Total time spent: 30 minutes**
 
@@ -1011,7 +1011,7 @@ Today I completed the soldering I did more research and it turns out the power b
 ![image.jpeg](https://cdn.hackclub.com/01a01177-ec93-7009-bce4-1c8f5fc0ac30/image.jpeg)
 Note: I only lapsed half the soldering and nothing from the battery search (was longer that I was planning 😭) I have around 15 mins lapsed so I will just put an extra 15 mins😬
 
-# 2026-09-23: 2026-08-18: Battery searching
+#  2026-08-18: Battery searching
 
 **Total time spent: 10 minutes**
 
@@ -1024,7 +1024,7 @@ The 2 options:
 And where I could place them:
 ![image.jpeg](https://cdn.hackclub.com/01a016a9-50e5-7148-80bf-0c40fe905073/image.jpeg)
 
-# 2026-09-23: 2026-08-19: Battery compartment redesign pt 1
+#  2026-08-19: Battery compartment redesign pt 1
 
 **Total time spent: 3h 18m**
 
@@ -1041,7 +1041,7 @@ So i started redesinging the console for the different battery but i didnt think
 ![2026-08-19_182355.png](https://cdn.hackclub.com/01a01aac-9096-7af0-bfc6-6f359dd4f80e/2026-08-19_182355.png)
 ![2026-08-19_182427.png](https://cdn.hackclub.com/01a01aac-a4ca-756f-a22a-c0821c4a1dbb/2026-08-19_182427.png)
 
-# 2026-09-23: 2026-08-20: Test print
+#  2026-08-20: Test print
 
 **Total time spent: 2 minutes**
 
@@ -1050,7 +1050,7 @@ So i started redesinging the console for the different battery but i didnt think
 So I sent the file to the printer and started printing the first prototype of the second version. However I didn’t manage to test it but I saw it and it should be good(paused it and put the battery on top to see if it would fit). I have left the house for vacation so I will try and do some things from here small things to keep the daily posts. Tomorrow I will probably order the batteries and will see what I will do the rest of the days probably some planning, research or some ui ideas. 
 ![image.jpeg](https://cdn.hackclub.com/01a02066-fc50-7f99-aaed-09b02f6b7244/image.jpeg)
 
-# 2026-09-23: 2026-08-21: Battery order
+#  2026-08-21: Battery order
 
 **Total time spent: 3 minutes**
 
@@ -1060,7 +1060,7 @@ So I finally found the right battery with a fair amount of capacity and reasonab
 It’s the Samsung 18650 3400mah I don’t remember the exact model but you can see below. They should arrive to my house within the next 4 days. 
 ![image.png](https://cdn.hackclub.com/01a025ce-0cc5-76b7-9ff8-e3d867317d57/image.png)
 
-# 2026-09-23: 2026-08-22: Joystick matters
+#  2026-08-22: Joystick matters
 
 **Total time spent: 5 minutes**
 
@@ -1072,7 +1072,7 @@ So I said before I have some issues with connecting the joysticks and those rema
 
 In conclusion I will probably order the breakout boards and might order an extra joystick just in case.
 
-# 2026-09-23: 2026-08-23: BOM pt1
+#  2026-08-23: BOM pt1
 
 **Total time spent: 20 minutes**
 
@@ -1084,7 +1084,7 @@ Started working on a BOM since it’s the only thing I can do from where I am at
 I couldn’t lapse it since it didn’t let me to due to an error but it took me around 20 mins (it’s hard on the phone)
 ![image.png](https://cdn.hackclub.com/01a02fc6-c705-7461-bdfa-ebeac59a1a67/image.png)
 
-# 2026-09-23: 2026-08-24: BOM pt2
+#  2026-08-24: BOM pt2
 
 **Total time spent: 0.5 hours**
 
@@ -1094,7 +1094,7 @@ Continued designing the BOM but I have some problems like for the prototype boar
 ![image.png](https://cdn.hackclub.com/01a03553-b4d2-71da-88ac-868998ddb328/image.png)
 ![image.png](https://cdn.hackclub.com/01a03553-df72-76fb-8823-5b48a12b1647/image.png)
 
-# 2026-09-23: 2026-08-24: More joystick searching
+#  2026-08-24: More joystick searching
 
 **Total time spent: 0.5 hours**
 
@@ -1108,7 +1108,7 @@ However I can’t connect them/ solder wires on the fpc cable so I searched for 
 ![image.png](https://cdn.hackclub.com/01a03572-4ec6-76d6-818c-a1f408b0ecb8/image.png)
 I like the first one but it’s a bit thicker than the 5mm space I have I could change the design but this module also has strange contacts which solder might not stick to and quite expensive compared to others. The second one seemed a bit bulky so I will probably go with the last one problem is they don’t have a push button on them so will have to probably add a button myself below the module if I need it that much.
 
-# 2026-09-23: 2026-08-25: Battery holder & joystick search
+#  2026-08-25: Battery holder & joystick search
 
 **Total time spent: 33 minutes**
 
@@ -1116,7 +1116,7 @@ I like the first one but it’s a bit thicker than the 5mm space I have I could 
 
 So i continued the search for the right joystick but now since i am on pc i can replicate the module and put it inside the 3d design and see if it fits so i tested this one ![image.png](https://cdn.hackclub.com/01a039a9-4a3e-7cc5-a197-ce8873e07cd7/image.png) and its a little bit thicker but its alr i will redesign some parts and it will be okay. however i dont think i can fit a button under it but i will try but it might be better to just use this ![image.png](https://cdn.hackclub.com/01a039aa-ea11-7ba4-81d0-65c3a52cde87/image.png) since its only 0.8 mm thicker but still has the button press. Then i swifted my search into battery holders despite what i said about soldering on the cells just because i want the project to be easier to replicate and more "Finished" but i strugled to find the demensions of all the holders and i think they are too chubby for the case especially now with the bigger joystick ![image.png](https://cdn.hackclub.com/01a039b0-2a27-7b3e-86d5-a61bb563c13d/image.png) ![image.png](https://cdn.hackclub.com/01a039b0-b724-7365-82b2-f2adf3d00f1b/image.png) i even got to a point on designing my own which aint bad but it hard if anyone wants to replicate the project ![image0_8_.jpeg](https://cdn.hackclub.com/01a039b5-1481-7c60-a6c8-be357a0849a9/image0_8_.jpeg) so i will stick with just soldering them if they ever arrive
 
-# 2026-09-23: 2026-08-25: Bluetooth & joystick redesign
+#  2026-08-25: Bluetooth & joystick redesign
 
 **Total time spent: 32 minutes**
 
@@ -1134,7 +1134,7 @@ after deciding i went on the 3d design and starterd makin adjustments firstly i 
 (will make it purple)
 ![image.png](https://cdn.hackclub.com/01a03a70-d266-7b16-8cb6-7872e3743ab2/image.png)
 
-# 2026-09-23: 2026-08-26: Back design (again)
+#  2026-08-26: Back design (again)
 
 **Total time spent: 1 hour**
 
@@ -1143,7 +1143,7 @@ after deciding i went on the 3d design and starterd makin adjustments firstly i 
 After redesigning the console for the new batteries the whole back side designs were ruined so i had to remake them again. It was easier this time because i had them ready but of course i had classic problems with offset thingy and when even slithly moving anything ![2026-08-26_111145.png](https://cdn.hackclub.com/01a03d30-c4f0-71a6-82e4-a8c17d2ebedc/2026-08-26_111145.png) also i was trying to assemble everything one by one and then i remembered there is a better way to just import all of it and group it (SO MANY PARTS) ![2026-08-26_112339.png](https://cdn.hackclub.com/01a03d32-7c67-77be-902a-cc5abf260226/2026-08-26_112339.png) ![2026-08-26_111708.png](https://cdn.hackclub.com/01a03d31-ae2d-7570-ab40-64633e9da007/2026-08-26_111708.png) but i will probably make the ones on the battery cover be like fused together so multi color print because its thin. But the final version look really good in my opinion ![2026-08-26_112636.png](https://cdn.hackclub.com/01a03d32-e5cd-7234-95ca-445e4b575b71/2026-08-26_112636.png)
 Bad news is that eu has new import taxes so every item i order from abroad gets taxed an additional 3 euros no matter the original cost so the joysticks end up costing 11 euros which is too much but i have no other option so i will order them and hoping they arrive soon.
 
-# 2026-09-23: 2026-08-27: Battery
+#  2026-08-27: Battery
 
 **Total time spent: 1 hour**
 
@@ -1158,7 +1158,7 @@ I also should mention that I wrapped some electrical tape around it just as an e
 I have some problems tho firstly the button cables on the right are a bit too short now because of the battery bump also the battery was hard to fit with the cables attached since it made it longer (I should adjust the compartment) also for some reason the mounting holes for the buttons are now inverted? Idk how that happened which also adds up the short cable problem ![image.jpeg](https://cdn.hackclub.com/01a044d5-d507-7267-b55b-d9f06a1e484d/image.jpeg) lastly I ordered the joysticks (the thicker ones) finally and I have to say that I kinda hate the new import taxes which add 3€ to any item.
 *second lapse link:*  https://lapse.hackclub.com/timelapse/grgtlLhN9iYO
 
-# 2026-09-23: 2026-08-28: 3d design fixes , BOM , tidying
+#  2026-08-28: 3d design fixes , BOM , tidying
 
 **Total time spent: 1 hour**
 
@@ -1175,7 +1175,7 @@ I almost forgot to mention that i had some trouble with the left vibrating motor
 but for some reason i had soldered them in gpio 16 and 17 and i just resoldered it instead of changing it in the code because i was too lazy to wait the code to upload (takes a longgggg time) and i already had my soldering iron on. after that both motor worked y but they need a tighter holding because you can hear them like colliding with the plastic.
 *second lapse link: *https://lapse.hackclub.com/timelapse/lx5QTyAN2aJp
 
-# 2026-09-23: 2026-08-29: Now playing redesign
+#  2026-08-29: Now playing redesign
 
 **Total time spent: 1.5 hours**
 
@@ -1185,7 +1185,7 @@ So i finally got around to making a decent now playing screen for the music for 
 So I found some on flaticon which look great here is the inspiration pic ![image.jpeg](https://cdn.hackclub.com/01a04edb-e2f7-73d3-9ad2-5467f6272ddf/image.jpeg) I firstly made the design in pixlr editor to have the positioning right ![image.jpeg](https://cdn.hackclub.com/01a04edc-7dfb-7963-9d70-f3fbd7ff57b4/image.jpeg) and here it is in the console ![image.jpeg](https://cdn.hackclub.com/01a04edc-d358-7656-91f2-c16158a8f6a2/image.jpeg)
 But this version has some problems the title and the artist (potentially the album too) gets half displayed if it just a bit longer so idk what I will do I might switch to a more hybrid version instead of having the text on side I put it in the middle and also I need to change and actually read the audio’s metatable for the album and artist
 
-# 2026-09-23: 2026-08-30: Game select redeisng
+#  2026-08-30: Game select redeisng
 
 **Total time spent: 1.5 hours**
 
@@ -1197,7 +1197,7 @@ i almost went with a different deisgn like a grid but i figured out it ddint hav
 ![image.png](https://cdn.hackclub.com/01a0545f-fb10-774b-9c2e-6c5734c6f0de/image.png)
 i think i will keep the list design since it took me so much time and i make like a second screen when you press it which has details how to play etc before its launched with a nice background. I also fixed the playing now screen for the music so it now actually support longer song names but i had to sacrifice the album name however i might try to fit it somewhere an other time ![image.png](https://cdn.hackclub.com/01a05464-0c5e-7eb3-88a8-bcb0e242efd3/image.png) and also i decided that i dont like the sizing(either too big or small) of the fonts on tft espi custom fonts so i might have to add my own ones  ![IMG_8150.jpeg](https://cdn.hackclub.com/01a05465-21d9-734e-82a5-3cd52af16784/IMG_8150.jpeg)
 
-# 2026-09-23: 2026-08-31: Game select screen implementation (idk if it called that)
+#  2026-08-31: Game select screen implementation (idk if it called that)
 
 **Total time spent: 2.5 hours**
 
@@ -1208,7 +1208,7 @@ So I actually made the game select screen from yesterday to work on the console 
 
 Idk why this took me so long or if it’s logical but I had so long since I last coded and I have forgotten basic commands
 
-# 2026-09-23: 2026-09-01: Skematik and github update
+#  2026-09-01: Skematik and github update
 
 **Total time spent: 1 hour**
 
@@ -1225,7 +1225,7 @@ and lastly (on the skematic) i added all the buttons which were missing (back, v
 Removed:
 ![image.png](https://cdn.hackclub.com/01a05e8c-a3a5-790e-a6fe-1b967e7c7d6b/image.png)
 
-# 2026-09-23: 2026-09-02: Gamepad mode not working ??
+#  2026-09-02: Gamepad mode not working ??
 
 **Total time spent: 1 hour 6 minutes**
 
@@ -1235,7 +1235,7 @@ so i decided to fix some wrong mapping that the gamepad mode had so i first had 
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/1Oi0MuoEdQY6
 
-# 2026-09-23: 2026-09-03: GAMEPAD FIXEDDDD
+#  2026-09-03: GAMEPAD FIXEDDDD
 
 **Total time spent: 1 hour 1 minute**
 
@@ -1244,7 +1244,7 @@ so i decided to fix some wrong mapping that the gamepad mode had so i first had 
 Omg this took way too long for such a simple fix. I genuinely had no idea what was going on so I decided to update the library and boards and hope it fixes the issue to my surprise it made the whole thing an even bigger time waste because it lost all the board setting and I didn’t realise so I had to wait for it to reach the end of compiling and give the errors. It wouldn’t be a big problem but every new compile takes more than 10 minutes so I had to go through this 2-3 times just to fix the settings. However the updates did absolutely nothing so I went back to testing. I thought it was something like a limit with the attributes(as the ai told me spoiler: I should have known not to follow it as it always messes things up) after some time searching the web and the library I found…NOTHING. So I switched method and I wanted to try if something else in the sketch blocks it (I had similar problems when first setting it up but I thought it was past this) so I started disabling features one by one and turns out that the audio is the problem and they couldn’t work at the same time for some reason I was so mad because the fix was really just 1 line of code (deinit audio that I had setup for the nes emulator) and now it works just fine only thing left is to fix the button mapping but I might leave it for later and configure them when the joysticks arrive so I don’t go back and forth.![image.png](https://cdn.hackclub.com/01a0690c-9780-7672-a201-d2257811773b/image.png) yeah even some random
 Crashes idk the whole thing was a rage bait today ![image.png](https://cdn.hackclub.com/01a0690d-2d86-751a-9a91-2d93b26e7d3f/image.png) even thought it might be the set button (wasn’t an issue) because someone said they had problems with it ![image.png](https://cdn.hackclub.com/01a0690d-fefb-7f36-97b0-66682c9fdc4f/image.png) finally worked 🤯![image.png](https://cdn.hackclub.com/01a0690e-480f-7bd0-b0d1-50eff51828f4/image.png)
 
-# 2026-09-23: 2026-09-04: Switch holder fix and gamepad button mapping
+#  2026-09-04: Switch holder fix and gamepad button mapping
 
 **Total time spent: 1 hour 40 minutes**
 
@@ -1253,7 +1253,7 @@ Crashes idk the whole thing was a rage bait today ![image.png](https://cdn.hackc
 For starters I fixed some wires that were cut like the sd sck ![image.jpeg](https://cdn.hackclub.com/01a06e19-5abc-7dbc-8ea1-8a20b3fe98e6/image.jpeg) I also made the switch actually work until now it was left unconnected so when I was charging it the console was left on I used 2 wires because they were too short and I don’t like the other cables I have ![image.jpeg](https://cdn.hackclub.com/01a06e1a-9968-7755-8b10-ea9738d1a854/image.jpeg)![image.jpeg](https://cdn.hackclub.com/01a06e1a-b3b2-7d94-9d30-b3886c980914/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/01a06e1a-eb9f-77a4-9e3d-a7dcb587f889/image.jpeg) I then finally fixed the button mapping using a little trick with a gamepad tester and its history forgot to send the ss over to my phone so will update later. Lastly I worked on the 3d model more specifically the power switch holder previously it was something like that
 
-# 2026-09-23: 2026-09-05: Github bom add
+#  2026-09-05: Github bom add
 
 **Total time spent: 15 minutes**
 
@@ -1262,7 +1262,7 @@ For starters I fixed some wires that were cut like the sd sck ![image.jpeg](http
 so i wanted to add the BOM to the github repo i thought it was supposed to be in .csv format but then i see in docs that i should i have it as a table in the read me so all the time figuring out how to turn it inot a .csv went to waste. luckily i found a tool which you copy the table and makes it github format
 ![2026-09-05_231139.png](https://cdn.hackclub.com/01a07347-8180-78e0-b98e-b91962df04a7/2026-09-05_231139.png) now its good looking i will complete the rest of the repo when the project is finished so i have pictures of it and complete models, code and instructions
 
-# 2026-09-23: 2026-09-05: 3d fixes (switch holder and tft holder)
+#  2026-09-05: 3d fixes (switch holder and tft holder)
 
 **Total time spent: 17 minutes**
 
@@ -1272,7 +1272,7 @@ Did some fixes on the 3d model for starters i fixed the switch holder because th
 ![2026-09-05_232543.png](https://cdn.hackclub.com/01a0734b-7b26-7cdc-a747-0ea6c6701f87/2026-09-05_232543.png) ![2026-09-05_232557.png](https://cdn.hackclub.com/01a0734b-8b3a-7963-b784-fba3460737ed/2026-09-05_232557.png) then i added something like a washer ? because the m3 screws i have are too long and the display moves up and donw ![2026-09-05_231618.png](https://cdn.hackclub.com/01a0734c-1f14-7057-a75f-13c76c830529/2026-09-05_231618.png) it going to go like this ![2026-09-05_231729.png](https://cdn.hackclub.com/01a0734c-4147-713d-862a-2628073b58a4/2026-09-05_231729.png) i also made the sd card slot a bit smaller and lastly i went around the bottom shell and added chambers so it makes the stand offs stronger ![2026-09-05_233120.png](https://cdn.hackclub.com/01a0734d-1425-7f14-abfa-3e6f36d5e8d2/2026-09-05_233120.png)
 i couldnt do more for today because i am sick and also waiting for the joysticks to get right measurements.
 
-# 2026-09-23: 2026-09-06: Steering wheel pt1
+#  2026-09-06: Steering wheel pt1
 
 **Total time spent: 1 hour 35 minutes**
 
@@ -1287,7 +1287,7 @@ So I had no idea on what I should do today so figured I would make the console a
 ![image.jpeg](https://cdn.hackclub.com/01a07872-e60c-7a1c-ac1f-2f364bcde72c/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/01a07873-2f73-79e9-884c-238e8e63ca5f/image.jpeg)
 
-# 2026-09-23: 2026-09-07: Steering wheel pt2
+#  2026-09-07: Steering wheel pt2
 
 **Total time spent: 1 hour 17 minutes**
 
@@ -1297,7 +1297,7 @@ So as I said yesterday I worked a bit more on the stability of the steering. I a
 ![image.jpeg](https://cdn.hackclub.com/01a07d74-b910-7cbc-ac79-b4d73c6d4034/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/01a07d74-dfdc-7c5a-8205-a09057627e26/image.jpeg)
 
-# 2026-09-23: 2026-09-08: Graphics system improvements (canvas system)
+#  2026-09-08: Graphics system improvements (canvas system)
 
 **Total time spent: 1 hour 10 minutes**
 
@@ -1312,7 +1312,7 @@ Make the screen less flickery. I also added the functions to the lua that will m
 Gotta love errors like this 
 ![image.jpeg](https://cdn.hackclub.com/01a0826e-5f50-7f7d-a225-e3a084139576/image.jpeg)
 
-# 2026-09-23: 2026-09-10: Battery placement alternatives
+#  2026-09-10: Battery placement alternatives
 
 **Total time spent: 1 hour 9 minutes**
 
@@ -1322,7 +1322,7 @@ So today I received the new joystick and they are pretty pretty good but it got 
 ![image.png](https://cdn.hackclub.com/01a08d1b-b631-7453-8ce9-789a3260ff88/image.png)
 (Other pictures can’t load so will update tomorrow)
 
-# 2026-09-23: 2026-09-11: 3d design finalisation and solder fixes
+#  2026-09-11: 3d design finalisation and solder fixes
 
 **Total time spent: 1 hour 2 minutes**
 
@@ -1338,7 +1338,7 @@ Put it before sleeping so tomorrow it will be ready for assembly!
 
 *second lapse link:* https://lapse.hackclub.com/timelapse/UCBkitI6rL1J
 
-# 2026-09-23: 2026-09-12: Last assembly and hopefully soldering
+#  2026-09-12: Last assembly and hopefully soldering
 
 **Total time spent: 2hour 50 minutes**
 
@@ -1346,7 +1346,7 @@ Put it before sleeping so tomorrow it will be ready for assembly!
 
 I don’t know what took so much time even though I did a lot of stuff. So finally I printed the shell in the filament I wanted the design is pretty solid only a few minor issues which were fixed like the tft screen mounting holes were too small and I couldn’t screw it but I just bade it a bit bigger with a screwdriver.  What took the longest was the soldering I had to replace a lot of cables that were too short to connect and of course resoldering vcable that disconnected continuously. I also put the heat inserts. There was a problem with the battery compartment and the battery couldn’t fit and I don’t know if it will close with the cover. Lastly I soldered the joysticks and the volume control button and everything is set I closed it up without screwing it to see if it closes and it does. Now I need to put some tape to hold specific cables and maybe something with the speakers and everything will be ready. ![image.jpeg](https://cdn.hackclub.com/01a096f3-6c66-75e7-beff-7e1b12f828b5/image.jpeg)![image.jpeg](https://cdn.hackclub.com/01a096f3-9756-727c-9c54-51f70e125765/image.jpeg)![image.jpeg](https://cdn.hackclub.com/01a096f3-ccdb-71c5-8219-32159be5df5b/image.jpeg) (this isn’t the final because there are some purple decor missing) forgot to mention that the select and start button have the text a bit messed up so I might have to print again with 0.2mm nozzle
 
-# 2026-09-23: 2026-09-13: Assembly fixes and joystick cap
+#  2026-09-13: Assembly fixes and joystick cap
 
 **Total time spent: 1 hour 10 minutes**
 
@@ -1358,7 +1358,7 @@ So most of the things I did today I don’t have a lapse for because I didn’t 
 ![image.jpeg](https://cdn.hackclub.com/01a09c68-add0-7fdf-b96d-135cab83b8ff/image.jpeg)
 ![image.jpeg](https://cdn.hackclub.com/01a09c68-d5f8-78d4-80e9-8d2e59dc54b9/image.jpeg)
 
-# 2026-09-23: 2026-09-14: Sanding and battery fix
+#  2026-09-14: Sanding and battery fix
 
 **Total time spent: 1 hour 2 minutes**
 
@@ -1370,7 +1370,7 @@ Another thing I didn’t expect to do is resoldering the battery. The problem wi
 ![image.jpeg](https://cdn.hackclub.com/01a0a19a-8f5d-73c5-81ac-5d06f57de5d2/image.jpeg)
 *second lapse link:* https://lapse.hackclub.com/timelapse/yOvChg0DiDjP
 
-# 2026-09-23: 2026-09-15: Firmware general fixes
+#  2026-09-15: Firmware general fixes
 
 **Total time spent: 1 hour 34 minutes**
 
@@ -1388,7 +1388,7 @@ As promised yesterday i started fixing some issues with the code that existed he
 ~When adjustiong the audio from the buttons the setting value didntt save so on a second power up and changes in volume were lost (only on the button) also made them change the values faster because they were painfully slow
 On the same "scope" i started adding the volume bar so you can visualize where the volume is set so you dont get earbang here is how i am planning on doing it ![image.png](https://cdn.hackclub.com/01a0a6cb-8c5e-7c32-b8ab-aebda9151cac/image.png) i have to think some other logic stuff on how it will work such as what will happen to the back groung on which it gets drawn on like when it goes away
 
-# 2026-09-23: 2026-09-16: Firmware fixes pt2 and nes saves
+#  2026-09-16: Firmware fixes pt2 and nes saves
 
 **Total time spent: 1 hour 24 minutes**
 
@@ -1398,7 +1398,7 @@ Today i started by working in the save of progress for nes games i could say it 
 
 also added the accelerator and braking on the joystick and designed a screen in pixlr e and i need to put it to the console will do it later tho ![image.png](https://cdn.hackclub.com/01a0ab9b-3cd2-7900-8528-2f07e4deb332/image.png)
 
-# 2026-09-23: 2026-09-17: Steering tab design
+#  2026-09-17: Steering tab design
 
 **Total time spent: 1 hour 10 minutes**
 
@@ -1409,7 +1409,7 @@ I also changed the steering wheel image as I mentioned yesterday but I implement
 ![image.jpeg](https://cdn.hackclub.com/01a0b0d3-9ddc-726b-8e6f-f12b6764a937/image.jpeg) 
 I like it pretty much I also test drove it and it is kinda hard but fun. Lastly I added the button presses also register in the steering mode so you can change how it accelerates from the game setting (for example when pressing a button) however then the ui won’t get updated
 
-# 2026-09-23: 2026-09-18: Github readme instructions pt1
+#  2026-09-18: Github readme instructions pt1
 
 **Total time spent: 2.5 hours**
 
@@ -1424,7 +1424,7 @@ But i also did what i hate the most writing the github repo i dont have much to 
 ![image.png](https://cdn.hackclub.com/01a0b64b-9fcc-7dc6-85c6-783d2fcce50d/image.png)
 i dont want to fill this journal with images from the repo so i will just leave only those
 
-# 2026-09-23: 2026-09-19: GitHub readme pt2
+#  2026-09-19: GitHub readme pt2
 
 **Total time spent: 1 hour 15 minimum**
 
@@ -1432,7 +1432,7 @@ i dont want to fill this journal with images from the repo so i will just leave 
 
 Today I wrote more of the read me I spend a lot of time writing so I might make this faster and skip some details. I also looked around the code and delete some logic that was removed either way. ![upload failed]()![image.png](https://cdn.hackclub.com/01a0bb42-eb6e-7502-89ec-f7025beab212/image.png)![Uploading image.png...]()
 
-# 2026-09-23: 2026-09-20: GitHub instructions pt3 aesthetics
+#  2026-09-20: GitHub instructions pt3 aesthetics
 
 **Total time spent: 1 hour 2 minutes**
 
@@ -1441,7 +1441,7 @@ Today I wrote more of the read me I spend a lot of time writing so I might make 
 I finally completed the assembly by also adding the battery covers and all of the aesthetic details. For the battery covers I used a different design holding on to the shell differently so it doesn’t intersect with the battery the cover for the empty one is much thicker because there is enough space. ![image.jpeg](https://cdn.hackclub.com/01a0c085-09a0-7416-a24f-ec082b9efacd/image.jpeg)![image.jpeg](https://cdn.hackclub.com/01a0c085-48a2-7f79-b4fa-38c2bd513ac2/image.jpeg)
 I also continued the GitHub repo writing process and fixed some typos and some parts where I was unclear.
 
-# 2026-09-23: 2026-09-21: Github readme and BOM.
+#  2026-09-21: Github readme and BOM.
 
 **Total time spent: 1 hour 10 minutes**
 
@@ -1453,7 +1453,7 @@ Wont flood the whole journal with screenshots so here are some snippets
 ![image.png](https://cdn.hackclub.com/01a0c5b8-1f74-7cfb-b4bd-201ec6ca8cf7/image.png)
 ![image.png](https://cdn.hackclub.com/01a0c5b8-4c09-73e6-ae3b-62d938488bce/image.png)
 
-# 2026-09-23: 2026-09-22: Git finalazing
+#  2026-09-22: Git finalazing
 
 **Total time spent: 1 hour 20 minutes**
 
