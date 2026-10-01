@@ -11,6 +11,11 @@ created\_at: "2026-05-16"
 **Total time spent: 1 hour**
 
 After the data loses i had to fix the entries luckily i had exported the journals before sumbiting however there were a couple of issues firstly there were double timing  because i had exported them twice if you getting me the fix was simple just a find and replace , due to the double exporting there were also double timing in each for this and the next problem i just used claude to fix it. The last issue was the lapse links i had to copy each link and date but timelapse website after you click a lapse you need to scroll down to where you were again so i just copied all of them in a text file and send it over to claude and it matched each date with each entry. But now i am also facing some issues re syncing the journals from github
+<img width="889" height="745" alt="Στιγμιότυπο οθόνης 2026-09-28 225211" src="https://github.com/user-attachments/assets/f7387cd9-3117-4e54-80fc-7e648d2c1602" />
+
+<img width="803" height="1077" alt="Στιγμιότυπο οθόνης 2026-09-28 225139" src="https://github.com/user-attachments/assets/7af03f5e-514d-4dae-a825-8eb9421752b9" />
+
+
 
 **Timelapse:** [Watch the timelapse (Sep 28, 10:21 PM)](https://lapse.hackclub.com/timelapse/_KMlFbKkhmAn)
 
