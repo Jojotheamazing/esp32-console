@@ -6,6 +6,9 @@ Fully journaled project:  https://forge.hackclub.com/projects/425
 
 All 3d models available in: https://cad.onshape.com/documents/4f867cde0156033dadc87c73/w/ddabea45654a6a1e826b5495/e/dd9f599f0ffd93bcb053a424?renderMode=0&uiState=6ab2e4172b9c8dddb3ef7906
 
+whatch a walk through of the project in YouTube:
+https://youtu.be/e1zcnvCGSNY?is=AjVVIZZFXflv4eBG
+
 ---
 
 ## 📖 Description
@@ -22,6 +25,16 @@ This project was one of my earliest ideas in the hardware/ software aspect which
 <img width="1136" height="512" alt="image" src="https://github.com/user-attachments/assets/7c26e2a1-43a8-46cb-b1da-167b5e7b6199" />
 <img width="1460" height="542" alt="image" src="https://github.com/user-attachments/assets/6d4bf4d8-4a21-4c94-9f54-a5df30303530" />
 
+<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/61f99f32-f5e1-40e4-8219-9e6faba41d37" />
+
+<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/b326d92d-e268-492a-b2fa-0e0ca5e5c770" />
+<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/d1dd67e3-8fae-4083-ae4a-89e9879fe893" />
+
+<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/550c9070-9378-420f-b441-4b43cb95ed73" />
+
+<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/8bf8daf3-42dd-48b9-a665-a70cc9fe8bea" />
+
+<img width="660" height="1434" alt="image" src="https://github.com/user-attachments/assets/f8c4f1cd-eaba-4eef-b985-92e30e69d180" />
 
 ---
 
